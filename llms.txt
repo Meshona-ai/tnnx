@@ -1,0 +1,24 @@
+# tnnx
+
+`tnnx` is a Python ML transpiler that starts from ONNX, builds a small explicit GraphIR, runs conservative graph passes, and emits readable JAX or MLX Python runtime artifacts plus `weights.npz` and optional `graph_ir.json`.
+
+Supported retained scope: ONNX ingest, initializer extraction, GraphIR serialization/validation, prune/normalize/shape propagation pass surface, JAX codegen, MLX codegen, the `tnnx transpile` CLI, small examples, model-zoo smoke paths, and named Qwen/Whisper/FLUX/NanoGPT/GPT-2 lanes where tests or docs mark them supported.
+
+Unsupported or removed scope: no FPGA/HLS/RTL/C/C++/native-runtime backend, no web/API server, no hardware toolchain, no hidden compatibility stubs for retired low-level targets. Optional performance-only optimizer infrastructure should not be reintroduced unless required for correctness or a retained model gate.
+
+Read first:
+- `docs/llm_context/index.md`
+- `docs/llm_context/architecture.md`
+- `docs/llm_context/dataflow.md`
+- `docs/llm_context/public_api_cli.md`
+- `docs/llm_context/operators.md`
+- `docs/llm_context/backends_jax_mlx.md`
+- `docs/llm_context/model_zoo.md`
+- `docs/llm_context/validation.md`
+- `docs/llm_context/extension_guide.md`
+- `docs/llm_context/known_limits.md`
+- `.codex/plans/tnnx_second_pass/PLAN.md`
+
+Install/test/validation sources: `README.md`, `examples/README.md`, `scripts/check.sh`, `.pre-commit-config.yaml`, `pyproject.toml`, and `docs/llm_context/validation.md`.
+
+Generated indexes are derived from the current tree at `91bf6abf1f392863d0c3cdca692d3272efdceb4b` plus this context-pack commit. Refresh `docs/llm_context/code_index.json`, `symbol_index.jsonl`, and `graph_edges.tsv` after code, test, docs, public API, model, or backend changes.

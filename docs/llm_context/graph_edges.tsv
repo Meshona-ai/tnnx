@@ -1,0 +1,1456 @@
+source	relation	target	evidence
+examples/common.py	imports	__future__	python AST import
+examples/common.py	imports	argparse	python AST import
+examples/common.py	imports	collections.abc	python AST import
+examples/common.py	imports	dataclasses	python AST import
+examples/common.py	imports	importlib.util	python AST import
+examples/common.py	imports	pathlib	python AST import
+examples/common.py	imports	tnnx.api	python AST import
+examples/common.py	imports	tnnx.config	python AST import
+examples/common.py	imports	typing	python AST import
+examples/flux/__init__.py	imports	.source	python AST import
+examples/flux/__init__.py	imports	.transpile_and_generate_jax	python AST import
+examples/flux/runtime_env.py	imports	__future__	python AST import
+examples/flux/runtime_env.py	imports	collections.abc	python AST import
+examples/flux/runtime_env.py	imports	huggingface_hub	python AST import
+examples/flux/runtime_env.py	imports	os	python AST import
+examples/flux/runtime_env.py	imports	pathlib	python AST import
+examples/flux/source.py	imports	.runtime_env	python AST import
+examples/flux/source.py	imports	__future__	python AST import
+examples/flux/source.py	imports	collections.abc	python AST import
+examples/flux/source.py	imports	dataclasses	python AST import
+examples/flux/source.py	imports	diffusers	python AST import
+examples/flux/source.py	imports	inspect	python AST import
+examples/flux/source.py	imports	onnx	python AST import
+examples/flux/source.py	imports	pathlib	python AST import
+examples/flux/source.py	imports	tnnx.ingest.op_map	python AST import
+examples/flux/source.py	imports	torch	python AST import
+examples/flux/source.py	imports	torch.nn	python AST import
+examples/flux/source.py	imports	torch.nn.functional	python AST import
+examples/flux/source.py	imports	transformers	python AST import
+examples/flux/source.py	imports	typing	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	.	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	.runtime_env	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	.source	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	PIL	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	__future__	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	argparse	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	collections.abc	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	examples.common	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	json	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	numpy	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	pathlib	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	tnnx.api	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	tnnx.config	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	torch	python AST import
+examples/flux/transpile_and_generate_jax.py	imports	typing	python AST import
+examples/model_conv.py	imports	__future__	python AST import
+examples/model_conv.py	imports	argparse	python AST import
+examples/model_conv.py	imports	collections.abc	python AST import
+examples/model_conv.py	imports	examples.common	python AST import
+examples/model_conv.py	imports	pathlib	python AST import
+examples/model_conv.py	imports	torch	python AST import
+examples/model_conv.py	imports	torch.nn	python AST import
+examples/model_mlp.py	imports	__future__	python AST import
+examples/model_mlp.py	imports	argparse	python AST import
+examples/model_mlp.py	imports	collections.abc	python AST import
+examples/model_mlp.py	imports	examples.common	python AST import
+examples/model_mlp.py	imports	pathlib	python AST import
+examples/model_mlp.py	imports	torch	python AST import
+examples/model_mlp.py	imports	torch.nn	python AST import
+examples/model_nanogpt_tiny.py	imports	__future__	python AST import
+examples/model_nanogpt_tiny.py	imports	argparse	python AST import
+examples/model_nanogpt_tiny.py	imports	collections.abc	python AST import
+examples/model_nanogpt_tiny.py	imports	dataclasses	python AST import
+examples/model_nanogpt_tiny.py	imports	examples.common	python AST import
+examples/model_nanogpt_tiny.py	imports	pathlib	python AST import
+examples/model_nanogpt_tiny.py	imports	torch	python AST import
+examples/model_nanogpt_tiny.py	imports	torch.nn	python AST import
+examples/model_nanogpt_tiny.py	imports	torch.nn.functional	python AST import
+examples/model_residual.py	imports	__future__	python AST import
+examples/model_residual.py	imports	argparse	python AST import
+examples/model_residual.py	imports	collections.abc	python AST import
+examples/model_residual.py	imports	examples.common	python AST import
+examples/model_residual.py	imports	pathlib	python AST import
+examples/model_residual.py	imports	torch	python AST import
+examples/model_residual.py	imports	torch.nn	python AST import
+examples/model_residual.py	imports	torch.nn.functional	python AST import
+examples/model_whisper_tiny.py	imports	__future__	python AST import
+examples/model_whisper_tiny.py	imports	argparse	python AST import
+examples/model_whisper_tiny.py	imports	collections.abc	python AST import
+examples/model_whisper_tiny.py	imports	dataclasses	python AST import
+examples/model_whisper_tiny.py	imports	examples.common	python AST import
+examples/model_whisper_tiny.py	imports	pathlib	python AST import
+examples/model_whisper_tiny.py	imports	torch	python AST import
+examples/model_whisper_tiny.py	imports	torch.nn	python AST import
+examples/model_whisper_tiny.py	imports	torch.nn.functional	python AST import
+examples/model_zoo/__init__.py	imports	.catalog	python AST import
+examples/model_zoo/__init__.py	imports	.compatibility	python AST import
+examples/model_zoo/__init__.py	imports	.loaders	python AST import
+examples/model_zoo/__init__.py	imports	.smoke	python AST import
+examples/model_zoo/catalog.py	imports	__future__	python AST import
+examples/model_zoo/catalog.py	imports	dataclasses	python AST import
+examples/model_zoo/check_compatibility.py	imports	.compatibility	python AST import
+examples/model_zoo/check_compatibility.py	imports	__future__	python AST import
+examples/model_zoo/compatibility.py	imports	.catalog	python AST import
+examples/model_zoo/compatibility.py	imports	__future__	python AST import
+examples/model_zoo/compatibility.py	imports	dataclasses	python AST import
+examples/model_zoo/list_models.py	imports	.catalog	python AST import
+examples/model_zoo/list_models.py	imports	__future__	python AST import
+examples/model_zoo/loaders.py	imports	.catalog	python AST import
+examples/model_zoo/loaders.py	imports	__future__	python AST import
+examples/model_zoo/loaders.py	imports	dataclasses	python AST import
+examples/model_zoo/loaders.py	imports	typing	python AST import
+examples/model_zoo/smoke.py	imports	.loaders	python AST import
+examples/model_zoo/smoke.py	imports	__future__	python AST import
+examples/model_zoo/smoke.py	imports	dataclasses	python AST import
+examples/model_zoo/smoke.py	imports	pathlib	python AST import
+examples/model_zoo/smoke.py	imports	tnnx.api	python AST import
+examples/model_zoo/smoke.py	imports	tnnx.config	python AST import
+examples/model_zoo/smoke.py	imports	typing	python AST import
+examples/model_zoo/transpile_smoke.py	imports	.smoke	python AST import
+examples/model_zoo/transpile_smoke.py	imports	__future__	python AST import
+examples/model_zoo/transpile_smoke.py	imports	argparse	python AST import
+examples/model_zoo/transpile_smoke.py	imports	examples.common	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	__future__	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	argparse	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	examples.common	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	numpy	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	onnx	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	pathlib	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	sys	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	tnnx.config	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	tnnx.ingest.op_map	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	torch	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	torch.nn	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	transformers	python AST import
+examples/nanogpt/infer_gpt2_from_transformers_jax.py	imports	typing	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	__future__	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	argparse	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	examples.common	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	examples.model_nanogpt_tiny	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	examples.nanogpt.utils	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	examples.run_nanogpt_tiny_jax	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	jax	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	numpy	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	pathlib	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	sys	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	torch	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	torch.nn.functional	python AST import
+examples/nanogpt/train_nanogpt_tiny.py	imports	typing	python AST import
+examples/nanogpt/utils.py	imports	__future__	python AST import
+examples/nanogpt/utils.py	imports	collections.abc	python AST import
+examples/qwen/__init__.py	imports	.infer_qwen3_5_from_transformers_jax	python AST import
+examples/qwen/__init__.py	imports	.infer_qwen3_5_from_transformers_mlx	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	__future__	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	argparse	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	examples.common	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	huggingface_hub	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	jax	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	numpy	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	onnx	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	pathlib	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	sys	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	tnnx.api	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	tnnx.config	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	tnnx.ingest.op_map	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	torch	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	torch.nn	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	transformers	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_jax.py	imports	typing	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	.infer_qwen3_5_from_transformers_jax	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	__future__	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	argparse	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	examples.common	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	importlib.metadata	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	mlx.core	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	numpy	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	onnx	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	pathlib	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	sys	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	tnnx.api	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	tnnx.config	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	torch	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	transformers	python AST import
+examples/qwen/infer_qwen3_5_from_transformers_mlx.py	imports	typing	python AST import
+examples/run_flux_jax.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	.model_nanogpt_tiny	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	__future__	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	argparse	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	collections.abc	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	examples.common	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	jax	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	numpy	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	pathlib	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	tnnx.config	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	torch	python AST import
+examples/run_nanogpt_tiny_jax.py	imports	typing	python AST import
+examples/run_whisper_tiny_mlx.py	imports	.model_whisper_tiny	python AST import
+examples/run_whisper_tiny_mlx.py	imports	__future__	python AST import
+examples/run_whisper_tiny_mlx.py	imports	argparse	python AST import
+examples/run_whisper_tiny_mlx.py	imports	collections.abc	python AST import
+examples/run_whisper_tiny_mlx.py	imports	examples.common	python AST import
+examples/run_whisper_tiny_mlx.py	imports	mlx.core	python AST import
+examples/run_whisper_tiny_mlx.py	imports	numpy	python AST import
+examples/run_whisper_tiny_mlx.py	imports	pathlib	python AST import
+examples/run_whisper_tiny_mlx.py	imports	tnnx.config	python AST import
+examples/run_whisper_tiny_mlx.py	imports	torch	python AST import
+examples/whisper_audio/runtime_env.py	imports	__future__	python AST import
+examples/whisper_audio/runtime_env.py	imports	importlib.util	python AST import
+examples/whisper_audio/runtime_env.py	imports	pathlib	python AST import
+examples/whisper_audio/runtime_env.py	imports	sys	python AST import
+examples/whisper_audio/transcribe_with_mlx_whisper.py	imports	.transpile_and_transcribe	python AST import
+examples/whisper_audio/transcribe_with_mlx_whisper.py	imports	__future__	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	.runtime_env	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	.whisper_hf_tiny_source	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	__future__	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	argparse	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	examples.common	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	json	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	mlx.core	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	numpy	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	onnx	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	pathlib	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	sys	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	tnnx.api	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	tnnx.config	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	tnnx.ingest.op_map	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	tokenizers	python AST import
+examples/whisper_audio/transpile_and_transcribe.py	imports	typing	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	.runtime_env	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	__future__	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	dataclasses	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	json	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	numpy	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	pathlib	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	safetensors.torch	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	subprocess	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	torch	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	torch.nn	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	torch.nn.functional	python AST import
+examples/whisper_audio/whisper_hf_tiny_source.py	imports	typing	python AST import
+scripts/research/adaptfm_cases.py	imports	__future__	python AST import
+scripts/research/adaptfm_cases.py	imports	collections.abc	python AST import
+scripts/research/adaptfm_cases.py	imports	dataclasses	python AST import
+scripts/research/adaptfm_cases.py	imports	math	python AST import
+scripts/research/adaptfm_cases.py	imports	numpy	python AST import
+scripts/research/adaptfm_cases.py	imports	onnx	python AST import
+scripts/research/adaptfm_cases.py	imports	pathlib	python AST import
+scripts/research/adaptfm_evidence.py	imports	__future__	python AST import
+scripts/research/adaptfm_evidence.py	imports	pathlib	python AST import
+scripts/research/adaptfm_evidence.py	imports	sys	python AST import
+scripts/research/adaptfm_evidence.py	imports	tnnx_evidence	python AST import
+scripts/research/check_anonymity.py	imports	__future__	python AST import
+scripts/research/check_anonymity.py	imports	argparse	python AST import
+scripts/research/check_anonymity.py	imports	collections.abc	python AST import
+scripts/research/check_anonymity.py	imports	dataclasses	python AST import
+scripts/research/check_anonymity.py	imports	pathlib	python AST import
+scripts/research/check_anonymity.py	imports	re	python AST import
+scripts/research/deterministic_artifacts.py	imports	__future__	python AST import
+scripts/research/deterministic_artifacts.py	imports	adaptfm_cases	python AST import
+scripts/research/deterministic_artifacts.py	imports	argparse	python AST import
+scripts/research/deterministic_artifacts.py	imports	datetime	python AST import
+scripts/research/deterministic_artifacts.py	imports	hashlib	python AST import
+scripts/research/deterministic_artifacts.py	imports	json	python AST import
+scripts/research/deterministic_artifacts.py	imports	numpy	python AST import
+scripts/research/deterministic_artifacts.py	imports	pathlib	python AST import
+scripts/research/deterministic_artifacts.py	imports	sys	python AST import
+scripts/research/deterministic_artifacts.py	imports	tnnx.api	python AST import
+scripts/research/deterministic_artifacts.py	imports	tnnx.config	python AST import
+scripts/research/deterministic_artifacts.py	imports	typing	python AST import
+scripts/research/hot_model_benchmarks.py	imports	__future__	python AST import
+scripts/research/hot_model_benchmarks.py	imports	argparse	python AST import
+scripts/research/hot_model_benchmarks.py	imports	examples.common	python AST import
+scripts/research/hot_model_benchmarks.py	imports	examples.flux	python AST import
+scripts/research/hot_model_benchmarks.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+scripts/research/hot_model_benchmarks.py	imports	examples.qwen	python AST import
+scripts/research/hot_model_benchmarks.py	imports	jax	python AST import
+scripts/research/hot_model_benchmarks.py	imports	json	python AST import
+scripts/research/hot_model_benchmarks.py	imports	math	python AST import
+scripts/research/hot_model_benchmarks.py	imports	mlx.core	python AST import
+scripts/research/hot_model_benchmarks.py	imports	numpy	python AST import
+scripts/research/hot_model_benchmarks.py	imports	onnxruntime	python AST import
+scripts/research/hot_model_benchmarks.py	imports	os	python AST import
+scripts/research/hot_model_benchmarks.py	imports	pathlib	python AST import
+scripts/research/hot_model_benchmarks.py	imports	shutil	python AST import
+scripts/research/hot_model_benchmarks.py	imports	sys	python AST import
+scripts/research/hot_model_benchmarks.py	imports	time	python AST import
+scripts/research/hot_model_benchmarks.py	imports	tnnx.api	python AST import
+scripts/research/hot_model_benchmarks.py	imports	tnnx.config	python AST import
+scripts/research/hot_model_benchmarks.py	imports	torch	python AST import
+scripts/research/hot_model_benchmarks.py	imports	transformers	python AST import
+scripts/research/hot_model_benchmarks.py	imports	typing	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	__future__	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	argparse	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	importlib.metadata	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	importlib.util	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	jax	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	jax.numpy	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	json	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	numpy	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	pathlib	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	platform	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	time	python AST import
+scripts/research/jax_metal_runtime_probe.py	imports	typing	python AST import
+scripts/research/pass_ablation.py	imports	__future__	python AST import
+scripts/research/pass_ablation.py	imports	adaptfm_cases	python AST import
+scripts/research/pass_ablation.py	imports	argparse	python AST import
+scripts/research/pass_ablation.py	imports	datetime	python AST import
+scripts/research/pass_ablation.py	imports	hashlib	python AST import
+scripts/research/pass_ablation.py	imports	json	python AST import
+scripts/research/pass_ablation.py	imports	numpy	python AST import
+scripts/research/pass_ablation.py	imports	pathlib	python AST import
+scripts/research/pass_ablation.py	imports	sys	python AST import
+scripts/research/pass_ablation.py	imports	time	python AST import
+scripts/research/pass_ablation.py	imports	tnnx.api	python AST import
+scripts/research/pass_ablation.py	imports	tnnx.config	python AST import
+scripts/research/pass_ablation.py	imports	typing	python AST import
+scripts/research/qwen_error_probe.py	imports	__future__	python AST import
+scripts/research/qwen_error_probe.py	imports	argparse	python AST import
+scripts/research/qwen_error_probe.py	imports	collections	python AST import
+scripts/research/qwen_error_probe.py	imports	examples.qwen	python AST import
+scripts/research/qwen_error_probe.py	imports	json	python AST import
+scripts/research/qwen_error_probe.py	imports	math	python AST import
+scripts/research/qwen_error_probe.py	imports	numpy	python AST import
+scripts/research/qwen_error_probe.py	imports	onnx	python AST import
+scripts/research/qwen_error_probe.py	imports	onnxruntime	python AST import
+scripts/research/qwen_error_probe.py	imports	pathlib	python AST import
+scripts/research/qwen_error_probe.py	imports	scripts.research.hot_model_benchmarks	python AST import
+scripts/research/qwen_error_probe.py	imports	sys	python AST import
+scripts/research/qwen_error_probe.py	imports	time	python AST import
+scripts/research/qwen_error_probe.py	imports	typing	python AST import
+scripts/research/tnnx_evidence.py	imports	__future__	python AST import
+scripts/research/tnnx_evidence.py	imports	argparse	python AST import
+scripts/research/tnnx_evidence.py	imports	collections.abc	python AST import
+scripts/research/tnnx_evidence.py	imports	copy	python AST import
+scripts/research/tnnx_evidence.py	imports	datetime	python AST import
+scripts/research/tnnx_evidence.py	imports	examples.model_whisper_tiny	python AST import
+scripts/research/tnnx_evidence.py	imports	examples.model_zoo	python AST import
+scripts/research/tnnx_evidence.py	imports	hashlib	python AST import
+scripts/research/tnnx_evidence.py	imports	importlib.util	python AST import
+scripts/research/tnnx_evidence.py	imports	json	python AST import
+scripts/research/tnnx_evidence.py	imports	numpy	python AST import
+scripts/research/tnnx_evidence.py	imports	os	python AST import
+scripts/research/tnnx_evidence.py	imports	pathlib	python AST import
+scripts/research/tnnx_evidence.py	imports	platform	python AST import
+scripts/research/tnnx_evidence.py	imports	re	python AST import
+scripts/research/tnnx_evidence.py	imports	subprocess	python AST import
+scripts/research/tnnx_evidence.py	imports	sys	python AST import
+scripts/research/tnnx_evidence.py	imports	time	python AST import
+scripts/research/tnnx_evidence.py	imports	tnnx.api	python AST import
+scripts/research/tnnx_evidence.py	imports	tnnx.config	python AST import
+scripts/research/tnnx_evidence.py	imports	typing	python AST import
+scripts/research/validate_equivalence.py	imports	__future__	python AST import
+scripts/research/validate_equivalence.py	imports	adaptfm_cases	python AST import
+scripts/research/validate_equivalence.py	imports	argparse	python AST import
+scripts/research/validate_equivalence.py	imports	datetime	python AST import
+scripts/research/validate_equivalence.py	imports	importlib.util	python AST import
+scripts/research/validate_equivalence.py	imports	json	python AST import
+scripts/research/validate_equivalence.py	imports	numpy	python AST import
+scripts/research/validate_equivalence.py	imports	pathlib	python AST import
+scripts/research/validate_equivalence.py	imports	sys	python AST import
+scripts/research/validate_equivalence.py	imports	tnnx.api	python AST import
+scripts/research/validate_equivalence.py	imports	tnnx.config	python AST import
+scripts/research/validate_equivalence.py	imports	typing	python AST import
+src/tnnx/__init__.py	imports	.api	python AST import
+src/tnnx/__init__.py	imports	.config	python AST import
+src/tnnx/api.py	imports	.codegen.jax_codegen	python AST import
+src/tnnx/api.py	imports	.codegen.mlx_codegen	python AST import
+src/tnnx/api.py	imports	.config	python AST import
+src/tnnx/api.py	imports	.ingest.onnx_reader	python AST import
+src/tnnx/api.py	imports	.ir.serde	python AST import
+src/tnnx/api.py	imports	.ir.types	python AST import
+src/tnnx/api.py	imports	.passes.normalize	python AST import
+src/tnnx/api.py	imports	.passes.prune	python AST import
+src/tnnx/api.py	imports	.passes.shape_prop	python AST import
+src/tnnx/api.py	imports	.runtime.weights	python AST import
+src/tnnx/api.py	imports	__future__	python AST import
+src/tnnx/api.py	imports	json	python AST import
+src/tnnx/api.py	imports	numpy	python AST import
+src/tnnx/api.py	imports	pathlib	python AST import
+src/tnnx/api.py	imports	typing	python AST import
+src/tnnx/cli.py	imports	.api	python AST import
+src/tnnx/cli.py	imports	.config	python AST import
+src/tnnx/cli.py	imports	__future__	python AST import
+src/tnnx/cli.py	imports	argparse	python AST import
+src/tnnx/codegen/__init__.py	imports	.common	python AST import
+src/tnnx/codegen/common.py	imports	..ir.types	python AST import
+src/tnnx/codegen/common.py	imports	__future__	python AST import
+src/tnnx/codegen/common.py	imports	dataclasses	python AST import
+src/tnnx/codegen/jax_codegen.py	imports	..ir.types	python AST import
+src/tnnx/codegen/jax_codegen.py	imports	__future__	python AST import
+src/tnnx/codegen/jax_codegen.py	imports	pathlib	python AST import
+src/tnnx/codegen/jax_codegen.py	imports	typing	python AST import
+src/tnnx/codegen/mlx_codegen.py	imports	..ir.types	python AST import
+src/tnnx/codegen/mlx_codegen.py	imports	__future__	python AST import
+src/tnnx/codegen/mlx_codegen.py	imports	pathlib	python AST import
+src/tnnx/codegen/mlx_codegen.py	imports	typing	python AST import
+src/tnnx/config.py	imports	__future__	python AST import
+src/tnnx/config.py	imports	dataclasses	python AST import
+src/tnnx/config.py	imports	pathlib	python AST import
+src/tnnx/config.py	imports	typing	python AST import
+src/tnnx/ingest/__init__.py	imports	.onnx_reader	python AST import
+src/tnnx/ingest/dtypes.py	imports	__future__	python AST import
+src/tnnx/ingest/dtypes.py	imports	onnx	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	..ir.schema	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	..ir.types	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	.dtypes	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	.op_map	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	.shape_hints	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	__future__	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	numpy	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	onnx	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	pathlib	python AST import
+src/tnnx/ingest/onnx_reader.py	imports	typing	python AST import
+src/tnnx/ingest/op_map.py	imports	__future__	python AST import
+src/tnnx/ingest/shape_hints.py	imports	__future__	python AST import
+src/tnnx/ingest/shape_hints.py	imports	onnx	python AST import
+src/tnnx/ir/__init__.py	imports	.schema	python AST import
+src/tnnx/ir/__init__.py	imports	.serde	python AST import
+src/tnnx/ir/__init__.py	imports	.types	python AST import
+src/tnnx/ir/schema.py	imports	.types	python AST import
+src/tnnx/ir/schema.py	imports	__future__	python AST import
+src/tnnx/ir/schema.py	imports	dataclasses	python AST import
+src/tnnx/ir/serde.py	imports	.schema	python AST import
+src/tnnx/ir/serde.py	imports	.types	python AST import
+src/tnnx/ir/serde.py	imports	__future__	python AST import
+src/tnnx/ir/serde.py	imports	json	python AST import
+src/tnnx/ir/types.py	imports	__future__	python AST import
+src/tnnx/ir/types.py	imports	dataclasses	python AST import
+src/tnnx/ir/types.py	imports	typing	python AST import
+src/tnnx/passes/__init__.py	imports	.normalize	python AST import
+src/tnnx/passes/__init__.py	imports	.prune	python AST import
+src/tnnx/passes/__init__.py	imports	.shape_prop	python AST import
+src/tnnx/passes/normalize.py	imports	..ir.types	python AST import
+src/tnnx/passes/normalize.py	imports	__future__	python AST import
+src/tnnx/passes/prune.py	imports	..ir.types	python AST import
+src/tnnx/passes/prune.py	imports	__future__	python AST import
+src/tnnx/passes/shape_prop.py	imports	..ir.types	python AST import
+src/tnnx/passes/shape_prop.py	imports	__future__	python AST import
+src/tnnx/passes/shape_prop.py	imports	copy	python AST import
+src/tnnx/passes/shape_prop.py	imports	math	python AST import
+src/tnnx/passes/shape_prop.py	imports	typing	python AST import
+src/tnnx/runtime/__init__.py	imports	.weights	python AST import
+src/tnnx/runtime/weights.py	imports	__future__	python AST import
+src/tnnx/runtime/weights.py	imports	numpy	python AST import
+src/tnnx/runtime/weights.py	imports	pathlib	python AST import
+src/tnnx/runtime/weights.py	imports	typing	python AST import
+src/tnnx/utils/__init__.py	imports	.deterministic	python AST import
+src/tnnx/utils/__init__.py	imports	.errors	python AST import
+tests/_support/flux.py	imports	__future__	python AST import
+tests/_support/flux.py	imports	examples.common	python AST import
+tests/_support/flux.py	imports	examples.flux.source	python AST import
+tests/_support/flux.py	imports	os	python AST import
+tests/_support/flux.py	imports	pathlib	python AST import
+tests/_support/flux.py	imports	pytest	python AST import
+tests/_support/flux.py	imports	sys	python AST import
+tests/_support/flux.py	imports	typing	python AST import
+tests/integration/test_cli_transpile_custom_artifacts.py	imports	__future__	python AST import
+tests/integration/test_cli_transpile_custom_artifacts.py	imports	json	python AST import
+tests/integration/test_cli_transpile_custom_artifacts.py	imports	numpy	python AST import
+tests/integration/test_cli_transpile_custom_artifacts.py	imports	onnx	python AST import
+tests/integration/test_cli_transpile_custom_artifacts.py	imports	pathlib	python AST import
+tests/integration/test_cli_transpile_custom_artifacts.py	imports	subprocess	python AST import
+tests/integration/test_cli_transpile_jax.py	imports	__future__	python AST import
+tests/integration/test_cli_transpile_jax.py	imports	numpy	python AST import
+tests/integration/test_cli_transpile_jax.py	imports	onnx	python AST import
+tests/integration/test_cli_transpile_jax.py	imports	pathlib	python AST import
+tests/integration/test_cli_transpile_jax.py	imports	subprocess	python AST import
+tests/integration/test_cli_transpile_mlx.py	imports	__future__	python AST import
+tests/integration/test_cli_transpile_mlx.py	imports	numpy	python AST import
+tests/integration/test_cli_transpile_mlx.py	imports	onnx	python AST import
+tests/integration/test_cli_transpile_mlx.py	imports	pathlib	python AST import
+tests/integration/test_cli_transpile_mlx.py	imports	subprocess	python AST import
+tests/integration/test_deterministic_artifacts.py	imports	__future__	python AST import
+tests/integration/test_deterministic_artifacts.py	imports	numpy	python AST import
+tests/integration/test_deterministic_artifacts.py	imports	onnx	python AST import
+tests/integration/test_deterministic_artifacts.py	imports	pathlib	python AST import
+tests/integration/test_deterministic_artifacts.py	imports	pytest	python AST import
+tests/integration/test_deterministic_artifacts.py	imports	tnnx.api	python AST import
+tests/integration/test_deterministic_artifacts.py	imports	tnnx.config	python AST import
+tests/integration/test_examples_export_cli.py	imports	__future__	python AST import
+tests/integration/test_examples_export_cli.py	imports	pathlib	python AST import
+tests/integration/test_examples_export_cli.py	imports	pytest	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	onnx	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_extended_ops_runtime_parity.py	imports	typing	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	onnx	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	tnnx.ir.types	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_flux_fp8_jax_runtime_parity.py	imports	typing	python AST import
+tests/integration/test_flux_jax_cli_prompt_npz.py	imports	__future__	python AST import
+tests/integration/test_flux_jax_cli_prompt_npz.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_jax_cli_prompt_npz.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+tests/integration/test_flux_jax_cli_prompt_npz.py	imports	numpy	python AST import
+tests/integration/test_flux_jax_cli_prompt_npz.py	imports	pathlib	python AST import
+tests/integration/test_flux_jax_cli_prompt_npz.py	imports	pytest	python AST import
+tests/integration/test_flux_jax_cli_prompt_npz.py	imports	sys	python AST import
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	imports	PIL	python AST import
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	imports	__future__	python AST import
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	imports	examples.flux	python AST import
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	imports	pathlib	python AST import
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	imports	pytest	python AST import
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	imports	sys	python AST import
+tests/integration/test_flux_jax_image_smoke.py	imports	PIL	python AST import
+tests/integration/test_flux_jax_image_smoke.py	imports	__future__	python AST import
+tests/integration/test_flux_jax_image_smoke.py	imports	examples.flux	python AST import
+tests/integration/test_flux_jax_image_smoke.py	imports	pathlib	python AST import
+tests/integration/test_flux_jax_image_smoke.py	imports	pytest	python AST import
+tests/integration/test_flux_jax_image_smoke.py	imports	sys	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	PIL	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	__future__	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	examples.flux	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	numpy	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	pathlib	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	pytest	python AST import
+tests/integration/test_flux_jax_prompt_injection.py	imports	sys	python AST import
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	imports	PIL	python AST import
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	imports	__future__	python AST import
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	imports	examples.flux	python AST import
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	imports	pathlib	python AST import
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	imports	pytest	python AST import
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	imports	sys	python AST import
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	imports	__future__	python AST import
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	imports	importlib	python AST import
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	imports	os	python AST import
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	imports	pathlib	python AST import
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	imports	pytest	python AST import
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	imports	sys	python AST import
+tests/integration/test_flux_pytorch_dummy_flux2_smoke.py	imports	PIL	python AST import
+tests/integration/test_flux_pytorch_dummy_flux2_smoke.py	imports	__future__	python AST import
+tests/integration/test_flux_pytorch_dummy_flux2_smoke.py	imports	examples.flux	python AST import
+tests/integration/test_flux_pytorch_dummy_flux2_smoke.py	imports	pathlib	python AST import
+tests/integration/test_flux_pytorch_dummy_flux2_smoke.py	imports	sys	python AST import
+tests/integration/test_flux_pytorch_prompt_to_image_smoke.py	imports	PIL	python AST import
+tests/integration/test_flux_pytorch_prompt_to_image_smoke.py	imports	__future__	python AST import
+tests/integration/test_flux_pytorch_prompt_to_image_smoke.py	imports	examples.flux	python AST import
+tests/integration/test_flux_pytorch_prompt_to_image_smoke.py	imports	pathlib	python AST import
+tests/integration/test_flux_pytorch_prompt_to_image_smoke.py	imports	sys	python AST import
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	imports	__future__	python AST import
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	imports	examples.flux	python AST import
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	imports	os	python AST import
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	imports	pathlib	python AST import
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	imports	pytest	python AST import
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	imports	sys	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	__future__	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	importlib	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	numpy	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	pathlib	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	pytest	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	sys	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	imports	__future__	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	imports	importlib	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	imports	pathlib	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	imports	pytest	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	imports	sys	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	__future__	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	examples.common	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	numpy	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	pathlib	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	pytest	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	sys	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_text_encoder_jax_parity.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_text_encoder_source.py	imports	__future__	python AST import
+tests/integration/test_flux_text_encoder_source.py	imports	importlib	python AST import
+tests/integration/test_flux_text_encoder_source.py	imports	pathlib	python AST import
+tests/integration/test_flux_text_encoder_source.py	imports	sys	python AST import
+tests/integration/test_flux_tiny_config_e2e_jax.py	imports	__future__	python AST import
+tests/integration/test_flux_tiny_config_e2e_jax.py	imports	examples.flux	python AST import
+tests/integration/test_flux_tiny_config_e2e_jax.py	imports	pathlib	python AST import
+tests/integration/test_flux_tiny_config_e2e_jax.py	imports	pytest	python AST import
+tests/integration/test_flux_tiny_config_e2e_jax.py	imports	sys	python AST import
+tests/integration/test_flux_tiny_config_e2e_torch.py	imports	__future__	python AST import
+tests/integration/test_flux_tiny_config_e2e_torch.py	imports	examples.flux	python AST import
+tests/integration/test_flux_tiny_config_e2e_torch.py	imports	pathlib	python AST import
+tests/integration/test_flux_tiny_config_e2e_torch.py	imports	pytest	python AST import
+tests/integration/test_flux_tiny_config_e2e_torch.py	imports	sys	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	__future__	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	importlib	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	numpy	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	pathlib	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	pytest	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	sys	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_transformer_checkpoint_runtime.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_transformer_checkpoint_source.py	imports	__future__	python AST import
+tests/integration/test_flux_transformer_checkpoint_source.py	imports	importlib	python AST import
+tests/integration/test_flux_transformer_checkpoint_source.py	imports	pathlib	python AST import
+tests/integration/test_flux_transformer_checkpoint_source.py	imports	pytest	python AST import
+tests/integration/test_flux_transformer_checkpoint_source.py	imports	sys	python AST import
+tests/integration/test_flux_transformer_checkpoint_transpile.py	imports	__future__	python AST import
+tests/integration/test_flux_transformer_checkpoint_transpile.py	imports	importlib	python AST import
+tests/integration/test_flux_transformer_checkpoint_transpile.py	imports	pathlib	python AST import
+tests/integration/test_flux_transformer_checkpoint_transpile.py	imports	pytest	python AST import
+tests/integration/test_flux_transformer_checkpoint_transpile.py	imports	sys	python AST import
+tests/integration/test_flux_transformer_checkpoint_transpile.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_transformer_checkpoint_transpile.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	__future__	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	diffusers.models.transformers.transformer_flux	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	diffusers.models.transformers.transformer_flux2	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	onnx	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	pathlib	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	pytest	python AST import
+tests/integration/test_flux_transformer_input_builder.py	imports	sys	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	__future__	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	examples.common	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	numpy	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	pathlib	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	pytest	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	sys	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_transformer_jax_parity.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_transformer_source.py	imports	__future__	python AST import
+tests/integration/test_flux_transformer_source.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_transformer_source.py	imports	pathlib	python AST import
+tests/integration/test_flux_transformer_source.py	imports	sys	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	__future__	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	importlib	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	numpy	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	pathlib	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	pytest	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	sys	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_vae_checkpoint_runtime.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	__future__	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	os	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	pathlib	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	pytest	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	sys	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_vae_checkpoint_transpile.py	imports	typing	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	__future__	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	examples.common	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	numpy	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	pathlib	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	pytest	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	sys	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	tnnx.api	python AST import
+tests/integration/test_flux_vae_decoder_jax_parity.py	imports	tnnx.config	python AST import
+tests/integration/test_flux_vae_decoder_source.py	imports	__future__	python AST import
+tests/integration/test_flux_vae_decoder_source.py	imports	examples.flux.source	python AST import
+tests/integration/test_flux_vae_decoder_source.py	imports	pathlib	python AST import
+tests/integration/test_flux_vae_decoder_source.py	imports	sys	python AST import
+tests/integration/test_gpt2_from_transformers_example_jax.py	imports	__future__	python AST import
+tests/integration/test_gpt2_from_transformers_example_jax.py	imports	examples.nanogpt.infer_gpt2_from_transformers_jax	python AST import
+tests/integration/test_gpt2_from_transformers_example_jax.py	imports	pathlib	python AST import
+tests/integration/test_gpt2_from_transformers_example_jax.py	imports	pytest	python AST import
+tests/integration/test_gpt2_from_transformers_example_jax.py	imports	types	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	jax.numpy	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	onnx	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	imports	typing	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	onnx	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_jax_instance_norm_runtime_parity.py	imports	typing	python AST import
+tests/integration/test_jax_parity_conv.py	imports	__future__	python AST import
+tests/integration/test_jax_parity_conv.py	imports	importlib.util	python AST import
+tests/integration/test_jax_parity_conv.py	imports	numpy	python AST import
+tests/integration/test_jax_parity_conv.py	imports	onnx	python AST import
+tests/integration/test_jax_parity_conv.py	imports	pathlib	python AST import
+tests/integration/test_jax_parity_conv.py	imports	pytest	python AST import
+tests/integration/test_jax_parity_conv.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_jax_parity_conv.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_jax_parity_conv.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	__future__	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	importlib.util	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	numpy	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	onnx	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	pathlib	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	pytest	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_jax_parity_mlp.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	onnx	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	imports	typing	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	onnx	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_jax_reshape_runtime_parity.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_jax_topology_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_jax_topology_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_jax_topology_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_jax_topology_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_jax_topology_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_jax_topology_runtime_parity.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_jax_topology_runtime_parity.py	imports	tnnx.ir.types	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	onnx	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_mlx_instance_norm_runtime_parity.py	imports	typing	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	__future__	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	importlib.util	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	numpy	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	onnx	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	pathlib	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	pytest	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_mlx_parity_conv.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	__future__	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	importlib.util	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	numpy	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	onnx	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	pathlib	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	pytest	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_mlx_parity_mlp.py	imports	tnnx.runtime.weights	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	__future__	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	examples.model_zoo	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	importlib.util	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	numpy	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	pathlib	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	pytest	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	sys	python AST import
+tests/integration/test_model_zoo_generated_runtime_parity.py	imports	typing	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	__future__	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	examples.model_nanogpt_tiny	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	examples.run_nanogpt_tiny_jax	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	importlib.util	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	numpy	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	onnx	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	pathlib	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	pytest	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	tnnx.api	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	tnnx.config	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	tnnx.ingest.op_map	python AST import
+tests/integration/test_nanogpt_tiny_example_jax.py	imports	typing	python AST import
+tests/integration/test_onnx_to_ir_gather_slice.py	imports	__future__	python AST import
+tests/integration/test_onnx_to_ir_gather_slice.py	imports	numpy	python AST import
+tests/integration/test_onnx_to_ir_gather_slice.py	imports	onnx	python AST import
+tests/integration/test_onnx_to_ir_gather_slice.py	imports	pathlib	python AST import
+tests/integration/test_onnx_to_ir_gather_slice.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_onnx_to_ir_layernorm.py	imports	__future__	python AST import
+tests/integration/test_onnx_to_ir_layernorm.py	imports	numpy	python AST import
+tests/integration/test_onnx_to_ir_layernorm.py	imports	onnx	python AST import
+tests/integration/test_onnx_to_ir_layernorm.py	imports	pathlib	python AST import
+tests/integration/test_onnx_to_ir_layernorm.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_onnx_to_ir_mlp.py	imports	__future__	python AST import
+tests/integration/test_onnx_to_ir_mlp.py	imports	numpy	python AST import
+tests/integration/test_onnx_to_ir_mlp.py	imports	onnx	python AST import
+tests/integration/test_onnx_to_ir_mlp.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_qwen3_5_example_jax.py	imports	__future__	python AST import
+tests/integration/test_qwen3_5_example_jax.py	imports	examples.qwen.infer_qwen3_5_from_transformers_jax	python AST import
+tests/integration/test_qwen3_5_example_jax.py	imports	numpy	python AST import
+tests/integration/test_qwen3_5_example_jax.py	imports	os	python AST import
+tests/integration/test_qwen3_5_example_jax.py	imports	pathlib	python AST import
+tests/integration/test_qwen3_5_example_jax.py	imports	pytest	python AST import
+tests/integration/test_qwen3_5_example_jax.py	imports	transformers	python AST import
+tests/integration/test_qwen3_5_example_mlx.py	imports	__future__	python AST import
+tests/integration/test_qwen3_5_example_mlx.py	imports	examples.qwen.infer_qwen3_5_from_transformers_mlx	python AST import
+tests/integration/test_qwen3_5_example_mlx.py	imports	numpy	python AST import
+tests/integration/test_qwen3_5_example_mlx.py	imports	os	python AST import
+tests/integration/test_qwen3_5_example_mlx.py	imports	pathlib	python AST import
+tests/integration/test_qwen3_5_example_mlx.py	imports	pytest	python AST import
+tests/integration/test_qwen3_5_example_mlx.py	imports	transformers	python AST import
+tests/integration/test_starter_model_parity.py	imports	__future__	python AST import
+tests/integration/test_starter_model_parity.py	imports	importlib.util	python AST import
+tests/integration/test_starter_model_parity.py	imports	numpy	python AST import
+tests/integration/test_starter_model_parity.py	imports	pathlib	python AST import
+tests/integration/test_starter_model_parity.py	imports	pytest	python AST import
+tests/integration/test_starter_model_parity.py	imports	tnnx.api	python AST import
+tests/integration/test_starter_model_parity.py	imports	tnnx.config	python AST import
+tests/integration/test_starter_model_parity.py	imports	typing	python AST import
+tests/integration/test_three_reference_models_transpile.py	imports	__future__	python AST import
+tests/integration/test_three_reference_models_transpile.py	imports	numpy	python AST import
+tests/integration/test_three_reference_models_transpile.py	imports	onnx	python AST import
+tests/integration/test_three_reference_models_transpile.py	imports	pathlib	python AST import
+tests/integration/test_three_reference_models_transpile.py	imports	pytest	python AST import
+tests/integration/test_three_reference_models_transpile.py	imports	tnnx.api	python AST import
+tests/integration/test_three_reference_models_transpile.py	imports	tnnx.config	python AST import
+tests/integration/test_transpile_extended_ops_contract.py	imports	__future__	python AST import
+tests/integration/test_transpile_extended_ops_contract.py	imports	numpy	python AST import
+tests/integration/test_transpile_extended_ops_contract.py	imports	onnx	python AST import
+tests/integration/test_transpile_extended_ops_contract.py	imports	pathlib	python AST import
+tests/integration/test_transpile_extended_ops_contract.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/integration/test_transpile_extended_ops_contract.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/integration/test_transpile_extended_ops_contract.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/integration/test_unified_backend_parity.py	imports	__future__	python AST import
+tests/integration/test_unified_backend_parity.py	imports	dataclasses	python AST import
+tests/integration/test_unified_backend_parity.py	imports	importlib.util	python AST import
+tests/integration/test_unified_backend_parity.py	imports	numpy	python AST import
+tests/integration/test_unified_backend_parity.py	imports	pathlib	python AST import
+tests/integration/test_unified_backend_parity.py	imports	pytest	python AST import
+tests/integration/test_unified_backend_parity.py	imports	tnnx.api	python AST import
+tests/integration/test_unified_backend_parity.py	imports	tnnx.config	python AST import
+tests/integration/test_unified_backend_parity.py	imports	typing	python AST import
+tests/integration/test_whisper_audio_real_mlx.py	imports	__future__	python AST import
+tests/integration/test_whisper_audio_real_mlx.py	imports	examples.whisper_audio.transpile_and_transcribe	python AST import
+tests/integration/test_whisper_audio_real_mlx.py	imports	os	python AST import
+tests/integration/test_whisper_audio_real_mlx.py	imports	pathlib	python AST import
+tests/integration/test_whisper_audio_real_mlx.py	imports	pytest	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	__future__	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	examples.whisper_audio.transpile_and_transcribe	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	examples.whisper_audio.whisper_hf_tiny_source	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	json	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	onnx	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	os	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	pathlib	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	pytest	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	sys	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	tnnx.api	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	tnnx.config	python AST import
+tests/integration/test_whisper_audio_transpile_source.py	imports	tnnx.ingest.op_map	python AST import
+tests/integration/test_whisper_tiny_example_mlx.py	imports	__future__	python AST import
+tests/integration/test_whisper_tiny_example_mlx.py	imports	examples.run_whisper_tiny_mlx	python AST import
+tests/integration/test_whisper_tiny_example_mlx.py	imports	pathlib	python AST import
+tests/integration/test_whisper_tiny_example_mlx.py	imports	pytest	python AST import
+tests/snapshots/expected/jax_gather_slice.py	imports	__future__	python AST import
+tests/snapshots/expected/jax_gather_slice.py	imports	jax	python AST import
+tests/snapshots/expected/jax_gather_slice.py	imports	jax.nn	python AST import
+tests/snapshots/expected/jax_gather_slice.py	imports	jax.numpy	python AST import
+tests/snapshots/expected/jax_gather_slice.py	imports	numpy	python AST import
+tests/snapshots/expected/jax_layernorm.py	imports	__future__	python AST import
+tests/snapshots/expected/jax_layernorm.py	imports	jax	python AST import
+tests/snapshots/expected/jax_layernorm.py	imports	jax.nn	python AST import
+tests/snapshots/expected/jax_layernorm.py	imports	jax.numpy	python AST import
+tests/snapshots/expected/jax_layernorm.py	imports	numpy	python AST import
+tests/snapshots/expected/jax_mlp.py	imports	__future__	python AST import
+tests/snapshots/expected/jax_mlp.py	imports	jax	python AST import
+tests/snapshots/expected/jax_mlp.py	imports	jax.nn	python AST import
+tests/snapshots/expected/jax_mlp.py	imports	jax.numpy	python AST import
+tests/snapshots/expected/jax_mlp.py	imports	numpy	python AST import
+tests/snapshots/expected/jax_qwen_fused_decoder_ops.py	imports	__future__	python AST import
+tests/snapshots/expected/jax_qwen_fused_decoder_ops.py	imports	jax	python AST import
+tests/snapshots/expected/jax_qwen_fused_decoder_ops.py	imports	jax.nn	python AST import
+tests/snapshots/expected/jax_qwen_fused_decoder_ops.py	imports	jax.numpy	python AST import
+tests/snapshots/expected/jax_qwen_fused_decoder_ops.py	imports	numpy	python AST import
+tests/snapshots/expected/jax_qwen_ops.py	imports	__future__	python AST import
+tests/snapshots/expected/jax_qwen_ops.py	imports	jax	python AST import
+tests/snapshots/expected/jax_qwen_ops.py	imports	jax.nn	python AST import
+tests/snapshots/expected/jax_qwen_ops.py	imports	jax.numpy	python AST import
+tests/snapshots/expected/jax_qwen_ops.py	imports	numpy	python AST import
+tests/snapshots/expected/mlx_gather_slice.py	imports	__future__	python AST import
+tests/snapshots/expected/mlx_gather_slice.py	imports	mlx.core	python AST import
+tests/snapshots/expected/mlx_gather_slice.py	imports	numpy	python AST import
+tests/snapshots/expected/mlx_layernorm.py	imports	__future__	python AST import
+tests/snapshots/expected/mlx_layernorm.py	imports	mlx.core	python AST import
+tests/snapshots/expected/mlx_layernorm.py	imports	numpy	python AST import
+tests/snapshots/expected/mlx_mlp.py	imports	__future__	python AST import
+tests/snapshots/expected/mlx_mlp.py	imports	mlx.core	python AST import
+tests/snapshots/expected/mlx_mlp.py	imports	numpy	python AST import
+tests/snapshots/expected/mlx_qwen_fused_decoder_ops.py	imports	__future__	python AST import
+tests/snapshots/expected/mlx_qwen_fused_decoder_ops.py	imports	mlx.core	python AST import
+tests/snapshots/expected/mlx_qwen_fused_decoder_ops.py	imports	numpy	python AST import
+tests/snapshots/expected/mlx_qwen_ops.py	imports	__future__	python AST import
+tests/snapshots/expected/mlx_qwen_ops.py	imports	mlx.core	python AST import
+tests/snapshots/expected/mlx_qwen_ops.py	imports	numpy	python AST import
+tests/snapshots/snapshot_utils.py	imports	__future__	python AST import
+tests/snapshots/snapshot_utils.py	imports	os	python AST import
+tests/snapshots/snapshot_utils.py	imports	pathlib	python AST import
+tests/snapshots/test_jax_codegen_gather_slice_snapshot.py	imports	.snapshot_utils	python AST import
+tests/snapshots/test_jax_codegen_gather_slice_snapshot.py	imports	__future__	python AST import
+tests/snapshots/test_jax_codegen_gather_slice_snapshot.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/snapshots/test_jax_codegen_gather_slice_snapshot.py	imports	tnnx.ir.types	python AST import
+tests/snapshots/test_jax_codegen_layernorm_snapshot.py	imports	.snapshot_utils	python AST import
+tests/snapshots/test_jax_codegen_layernorm_snapshot.py	imports	__future__	python AST import
+tests/snapshots/test_jax_codegen_layernorm_snapshot.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/snapshots/test_jax_codegen_layernorm_snapshot.py	imports	tnnx.ir.types	python AST import
+tests/snapshots/test_jax_codegen_snapshot.py	imports	.snapshot_utils	python AST import
+tests/snapshots/test_jax_codegen_snapshot.py	imports	__future__	python AST import
+tests/snapshots/test_jax_codegen_snapshot.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/snapshots/test_jax_codegen_snapshot.py	imports	tnnx.ir.types	python AST import
+tests/snapshots/test_mlx_codegen_gather_slice_snapshot.py	imports	.snapshot_utils	python AST import
+tests/snapshots/test_mlx_codegen_gather_slice_snapshot.py	imports	__future__	python AST import
+tests/snapshots/test_mlx_codegen_gather_slice_snapshot.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/snapshots/test_mlx_codegen_gather_slice_snapshot.py	imports	tnnx.ir.types	python AST import
+tests/snapshots/test_mlx_codegen_layernorm_snapshot.py	imports	.snapshot_utils	python AST import
+tests/snapshots/test_mlx_codegen_layernorm_snapshot.py	imports	__future__	python AST import
+tests/snapshots/test_mlx_codegen_layernorm_snapshot.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/snapshots/test_mlx_codegen_layernorm_snapshot.py	imports	tnnx.ir.types	python AST import
+tests/snapshots/test_mlx_codegen_snapshot.py	imports	.snapshot_utils	python AST import
+tests/snapshots/test_mlx_codegen_snapshot.py	imports	__future__	python AST import
+tests/snapshots/test_mlx_codegen_snapshot.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/snapshots/test_mlx_codegen_snapshot.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_api_manifest.py	imports	__future__	python AST import
+tests/unit/test_api_manifest.py	imports	json	python AST import
+tests/unit/test_api_manifest.py	imports	numpy	python AST import
+tests/unit/test_api_manifest.py	imports	onnx	python AST import
+tests/unit/test_api_manifest.py	imports	pathlib	python AST import
+tests/unit/test_api_manifest.py	imports	tnnx.api	python AST import
+tests/unit/test_api_manifest.py	imports	tnnx.config	python AST import
+tests/unit/test_backend_codegen_extended_ops.py	imports	__future__	python AST import
+tests/unit/test_backend_codegen_extended_ops.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/unit/test_backend_codegen_extended_ops.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/unit/test_backend_codegen_extended_ops.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_backend_semantic_coverage.py	imports	__future__	python AST import
+tests/unit/test_backend_semantic_coverage.py	imports	inspect	python AST import
+tests/unit/test_backend_semantic_coverage.py	imports	re	python AST import
+tests/unit/test_backend_semantic_coverage.py	imports	tnnx.codegen	python AST import
+tests/unit/test_backend_semantic_coverage.py	imports	tnnx.ir.schema	python AST import
+tests/unit/test_environment_contract.py	imports	__future__	python AST import
+tests/unit/test_environment_contract.py	imports	importlib.metadata	python AST import
+tests/unit/test_environment_contract.py	imports	sys	python AST import
+tests/unit/test_environment_contract.py	imports	tnnx	python AST import
+tests/unit/test_examples_model_zoo_catalog.py	imports	__future__	python AST import
+tests/unit/test_examples_model_zoo_catalog.py	imports	examples.model_zoo	python AST import
+tests/unit/test_examples_model_zoo_catalog.py	imports	examples.model_zoo.loaders	python AST import
+tests/unit/test_examples_model_zoo_catalog.py	imports	pathlib	python AST import
+tests/unit/test_examples_model_zoo_catalog.py	imports	pytest	python AST import
+tests/unit/test_examples_model_zoo_catalog.py	imports	sys	python AST import
+tests/unit/test_examples_model_zoo_smoke.py	imports	__future__	python AST import
+tests/unit/test_examples_model_zoo_smoke.py	imports	examples.model_zoo	python AST import
+tests/unit/test_examples_model_zoo_smoke.py	imports	pathlib	python AST import
+tests/unit/test_examples_model_zoo_smoke.py	imports	sys	python AST import
+tests/unit/test_flux_checkpoint_asset_inspection.py	imports	__future__	python AST import
+tests/unit/test_flux_checkpoint_asset_inspection.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+tests/unit/test_flux_checkpoint_asset_inspection.py	imports	json	python AST import
+tests/unit/test_flux_checkpoint_asset_inspection.py	imports	pathlib	python AST import
+tests/unit/test_flux_checkpoint_asset_inspection.py	imports	pytest	python AST import
+tests/unit/test_flux_checkpoint_asset_inspection.py	imports	sys	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	__future__	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	json	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	pathlib	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	pytest	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	sys	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	types	python AST import
+tests/unit/test_flux_checkpoint_prepare_report.py	imports	typing	python AST import
+tests/unit/test_flux_fp8_jax_codegen_contract.py	imports	__future__	python AST import
+tests/unit/test_flux_fp8_jax_codegen_contract.py	imports	onnx	python AST import
+tests/unit/test_flux_fp8_jax_codegen_contract.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/unit/test_flux_fp8_jax_codegen_contract.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_flux_prompt_bridge_contract.py	imports	__future__	python AST import
+tests/unit/test_flux_prompt_bridge_contract.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+tests/unit/test_flux_prompt_bridge_contract.py	imports	numpy	python AST import
+tests/unit/test_flux_prompt_bridge_contract.py	imports	pathlib	python AST import
+tests/unit/test_flux_prompt_bridge_contract.py	imports	pytest	python AST import
+tests/unit/test_flux_prompt_bridge_contract.py	imports	sys	python AST import
+tests/unit/test_flux_prompt_npz_contract.py	imports	__future__	python AST import
+tests/unit/test_flux_prompt_npz_contract.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+tests/unit/test_flux_prompt_npz_contract.py	imports	numpy	python AST import
+tests/unit/test_flux_prompt_npz_contract.py	imports	pathlib	python AST import
+tests/unit/test_flux_prompt_npz_contract.py	imports	pytest	python AST import
+tests/unit/test_flux_prompt_npz_contract.py	imports	sys	python AST import
+tests/unit/test_flux_real_component_loader_contract.py	imports	__future__	python AST import
+tests/unit/test_flux_real_component_loader_contract.py	imports	examples.flux.source	python AST import
+tests/unit/test_flux_real_component_loader_contract.py	imports	pathlib	python AST import
+tests/unit/test_flux_real_component_loader_contract.py	imports	sys	python AST import
+tests/unit/test_flux_real_component_loader_contract.py	imports	types	python AST import
+tests/unit/test_flux_runtime_env_contract.py	imports	__future__	python AST import
+tests/unit/test_flux_runtime_env_contract.py	imports	examples.flux.runtime_env	python AST import
+tests/unit/test_flux_runtime_env_contract.py	imports	huggingface_hub	python AST import
+tests/unit/test_flux_runtime_env_contract.py	imports	pathlib	python AST import
+tests/unit/test_flux_runtime_env_contract.py	imports	pytest	python AST import
+tests/unit/test_flux_runtime_env_contract.py	imports	sys	python AST import
+tests/unit/test_flux_submodule_inventory.py	imports	__future__	python AST import
+tests/unit/test_flux_submodule_inventory.py	imports	examples.flux	python AST import
+tests/unit/test_flux_submodule_inventory.py	imports	examples.flux.source	python AST import
+tests/unit/test_flux_submodule_inventory.py	imports	pathlib	python AST import
+tests/unit/test_flux_submodule_inventory.py	imports	sys	python AST import
+tests/unit/test_flux_submodule_inventory.py	imports	typing	python AST import
+tests/unit/test_flux_token_ids_npz_contract.py	imports	__future__	python AST import
+tests/unit/test_flux_token_ids_npz_contract.py	imports	examples.flux.transpile_and_generate_jax	python AST import
+tests/unit/test_flux_token_ids_npz_contract.py	imports	numpy	python AST import
+tests/unit/test_flux_token_ids_npz_contract.py	imports	pathlib	python AST import
+tests/unit/test_flux_token_ids_npz_contract.py	imports	pytest	python AST import
+tests/unit/test_flux_token_ids_npz_contract.py	imports	sys	python AST import
+tests/unit/test_initializer_extraction.py	imports	__future__	python AST import
+tests/unit/test_initializer_extraction.py	imports	numpy	python AST import
+tests/unit/test_initializer_extraction.py	imports	onnx	python AST import
+tests/unit/test_initializer_extraction.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/unit/test_ir_roundtrip.py	imports	__future__	python AST import
+tests/unit/test_ir_roundtrip.py	imports	tnnx.ir.serde	python AST import
+tests/unit/test_ir_roundtrip.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_ir_validation.py	imports	__future__	python AST import
+tests/unit/test_ir_validation.py	imports	pytest	python AST import
+tests/unit/test_ir_validation.py	imports	tnnx.ir.schema	python AST import
+tests/unit/test_ir_validation.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_jax_codegen_bfloat16.py	imports	__future__	python AST import
+tests/unit/test_jax_codegen_bfloat16.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/unit/test_jax_codegen_bfloat16.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_jax_codegen_instance_norm.py	imports	__future__	python AST import
+tests/unit/test_jax_codegen_instance_norm.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/unit/test_jax_codegen_instance_norm.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_jax_codegen_reciprocal_squeeze.py	imports	__future__	python AST import
+tests/unit/test_jax_codegen_reciprocal_squeeze.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/unit/test_jax_codegen_reciprocal_squeeze.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_jax_codegen_reshape_contract.py	imports	__future__	python AST import
+tests/unit/test_jax_codegen_reshape_contract.py	imports	numpy	python AST import
+tests/unit/test_jax_codegen_reshape_contract.py	imports	pytest	python AST import
+tests/unit/test_jax_codegen_reshape_contract.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/unit/test_jax_codegen_reshape_contract.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_jax_codegen_topology_contract.py	imports	__future__	python AST import
+tests/unit/test_jax_codegen_topology_contract.py	imports	tnnx.codegen.jax_codegen	python AST import
+tests/unit/test_jax_codegen_topology_contract.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_loc_budget.py	imports	pathlib	python AST import
+tests/unit/test_mlx_codegen_instance_norm.py	imports	__future__	python AST import
+tests/unit/test_mlx_codegen_instance_norm.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/unit/test_mlx_codegen_instance_norm.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_mlx_conv_padding_validation.py	imports	__future__	python AST import
+tests/unit/test_mlx_conv_padding_validation.py	imports	pytest	python AST import
+tests/unit/test_mlx_conv_padding_validation.py	imports	tnnx.codegen.mlx_codegen	python AST import
+tests/unit/test_mlx_conv_padding_validation.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_name_stability.py	imports	__future__	python AST import
+tests/unit/test_name_stability.py	imports	tnnx.codegen.common	python AST import
+tests/unit/test_onnx_dtype_mapping.py	imports	__future__	python AST import
+tests/unit/test_onnx_dtype_mapping.py	imports	onnx	python AST import
+tests/unit/test_onnx_dtype_mapping.py	imports	pytest	python AST import
+tests/unit/test_onnx_dtype_mapping.py	imports	tnnx.ingest.dtypes	python AST import
+tests/unit/test_op_mapping.py	imports	__future__	python AST import
+tests/unit/test_op_mapping.py	imports	tnnx.ingest.op_map	python AST import
+tests/unit/test_shape_prop.py	imports	__future__	python AST import
+tests/unit/test_shape_prop.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_shape_prop.py	imports	tnnx.passes.shape_prop	python AST import
+tests/unit/test_topological_emit_order.py	imports	__future__	python AST import
+tests/unit/test_topological_emit_order.py	imports	tnnx.codegen.common	python AST import
+tests/unit/test_topological_emit_order.py	imports	tnnx.ir.types	python AST import
+tests/unit/test_unsupported_op_error.py	imports	__future__	python AST import
+tests/unit/test_unsupported_op_error.py	imports	onnx	python AST import
+tests/unit/test_unsupported_op_error.py	imports	pytest	python AST import
+tests/unit/test_unsupported_op_error.py	imports	tnnx.ingest.onnx_reader	python AST import
+tests/unit/test_weight_loader_contract.py	imports	__future__	python AST import
+tests/unit/test_weight_loader_contract.py	imports	numpy	python AST import
+tests/unit/test_weight_loader_contract.py	imports	tnnx.runtime.weights	python AST import
+src/tnnx/ingest/op_map.py	maps_onnx_op	Add->ADD	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	And->AND	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	AveragePool->AVGPOOL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	BatchNormalization->BATCHNORM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Cast->CAST	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Clip->CLIP	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Concat->CONCAT	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	ConstantOfShape->CONSTANT_OF_SHAPE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Conv->CONV2D	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Cos->COS	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	CumSum->CUMSUM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	DequantizeLinear->DEQUANTIZE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Div->DIV	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Equal->EQUAL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Erf->ERF	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Exp->EXP	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Expand->EXPAND	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Flatten->FLATTEN	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Gather->GATHER	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	GatherElements->GATHERELEMENTS	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Gelu->GELU	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Gemm->GEMM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	GlobalAveragePool->AVGPOOL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	GlobalMaxPool->MAXPOOL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Greater->GREATER	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	GreaterOrEqual->GREATEROREQUAL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	GroupQueryAttention->GROUPQUERYATTENTION	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Identity->IDENTITY	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	InstanceNormalization->INSTANCENORM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	IsNaN->ISNAN	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	LayerNormalization->LAYERNORM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Less->LESS	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	LessOrEqual->LESSOREQUAL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Log->LOG	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	MatMul->MATMUL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	MaxPool->MAXPOOL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Mish->MISH	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Mod->MOD	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Mul->MUL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Neg->NEG	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Pad->PAD	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Pow->POW	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	QuantizeLinear->QUANTIZE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	RMSNormalization->RMSNORM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Range->ARANGE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Reciprocal->RECIPROCAL	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	ReduceMean->REDUCEMEAN	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	ReduceSum->REDUCESUM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Relu->RELU	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Reshape->RESHAPE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Resize->UPSAMPLE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	RotaryEmbedding->ROTARYEMBEDDING	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	ScatterND->SCATTERND	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Shape->SHAPE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Sigmoid->SIGMOID	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	SimplifiedLayerNormalization->RMSNORM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Sin->SIN	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	SkipSimplifiedLayerNormalization->SKIPRMSNORM	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Slice->SLICE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Softmax->SOFTMAX	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Softplus->SOFTPLUS	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Split->SPLIT	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Sqrt->SQRT	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Squeeze->SQUEEZE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Sub->SUB	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Tanh->TANH	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Transpose->TRANSPOSE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Trilu->TRILU	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Unsqueeze->UNSQUEEZE	ONNX_TO_SEMANTIC
+src/tnnx/ingest/op_map.py	maps_onnx_op	Where->WHERE	ONNX_TO_SEMANTIC
+src/tnnx/ir/schema.py	defines_operator	ADD	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	ADD	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	ADD	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	AND	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	AND	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	AND	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	ARANGE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	ARANGE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	ARANGE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	AVGPOOL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	AVGPOOL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	AVGPOOL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	BATCHNORM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	BATCHNORM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	BATCHNORM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	CAST	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	CAST	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	CAST	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	CLIP	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	CLIP	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	CLIP	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	CONCAT	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	CONCAT	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	CONCAT	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	CONSTANT_OF_SHAPE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	CONSTANT_OF_SHAPE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	CONSTANT_OF_SHAPE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	CONV2D	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	CONV2D	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	CONV2D	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	COS	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	COS	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	COS	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	CUMSUM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	CUMSUM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	CUMSUM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	DEQUANTIZE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	DEQUANTIZE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	DEQUANTIZE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	DIV	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	DIV	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	DIV	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	EQUAL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	EQUAL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	EQUAL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	ERF	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	ERF	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	ERF	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	EXP	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	EXP	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	EXP	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	EXPAND	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	EXPAND	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	EXPAND	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	FLATTEN	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	FLATTEN	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	FLATTEN	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	GATHER	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	GATHER	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	GATHER	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	GATHERELEMENTS	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	GATHERELEMENTS	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	GATHERELEMENTS	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	GELU	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	GELU	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	GELU	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	GEMM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	GEMM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	GEMM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	GREATER	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	GREATER	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	GREATER	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	GREATEROREQUAL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	GREATEROREQUAL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	GREATEROREQUAL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	GROUPQUERYATTENTION	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	GROUPQUERYATTENTION	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	GROUPQUERYATTENTION	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	IDENTITY	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	IDENTITY	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	IDENTITY	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	INSTANCENORM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	INSTANCENORM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	INSTANCENORM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	ISNAN	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	ISNAN	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	ISNAN	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	LAYERNORM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	LAYERNORM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	LAYERNORM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	LESS	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	LESS	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	LESS	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	LESSOREQUAL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	LESSOREQUAL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	LESSOREQUAL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	LOG	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	LOG	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	LOG	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	MATMUL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	MATMUL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	MATMUL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	MAXPOOL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	MAXPOOL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	MAXPOOL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	MISH	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	MISH	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	MISH	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	MOD	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	MOD	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	MOD	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	MUL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	MUL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	MUL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	NEG	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	NEG	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	NEG	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	PAD	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	PAD	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	PAD	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	POW	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	POW	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	POW	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	QUANTIZE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	QUANTIZE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	QUANTIZE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	RECIPROCAL	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	RECIPROCAL	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	RECIPROCAL	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	REDUCEMEAN	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	REDUCEMEAN	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	REDUCEMEAN	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	REDUCESUM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	REDUCESUM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	REDUCESUM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	RELU	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	RELU	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	RELU	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	RELU6	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	RELU6	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	RELU6	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	RESHAPE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	RESHAPE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	RESHAPE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	RMSNORM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	RMSNORM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	RMSNORM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	ROTARYEMBEDDING	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	ROTARYEMBEDDING	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	ROTARYEMBEDDING	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SCATTERND	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SCATTERND	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SCATTERND	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SHAPE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SHAPE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SHAPE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SIGMOID	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SIGMOID	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SIGMOID	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SILU	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SILU	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SILU	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SIN	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SIN	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SIN	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SKIPRMSNORM	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SKIPRMSNORM	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SKIPRMSNORM	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SLICE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SLICE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SLICE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SOFTMAX	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SOFTMAX	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SOFTMAX	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SOFTPLUS	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SOFTPLUS	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SOFTPLUS	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SPLIT	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SPLIT	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SPLIT	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SQRT	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SQRT	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SQRT	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SQUEEZE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SQUEEZE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SQUEEZE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	SUB	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	SUB	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	SUB	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	TANH	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	TANH	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	TANH	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	TRANSPOSE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	TRANSPOSE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	TRANSPOSE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	TRILU	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	TRILU	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	TRILU	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	UNSQUEEZE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	UNSQUEEZE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	UNSQUEEZE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	UPSAMPLE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	UPSAMPLE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	UPSAMPLE	dispatch coverage test
+src/tnnx/ir/schema.py	defines_operator	WHERE	SEMANTIC_SCHEMAS
+src/tnnx/codegen/jax_codegen.py	handles_operator	WHERE	dispatch coverage test
+src/tnnx/codegen/mlx_codegen.py	handles_operator	WHERE	dispatch coverage test
+docs/llm_context/README.md	documents	tnnx	context pack
+docs/llm_context/SCHEMA.md	documents	tnnx	context pack
+docs/llm_context/index.md	documents	tnnx	context pack
+docs/llm_context/log.md	documents	tnnx	context pack
+docs/llm_context/architecture.md	documents	tnnx	context pack
+docs/llm_context/dataflow.md	documents	tnnx	context pack
+docs/llm_context/public_api_cli.md	documents	tnnx	context pack
+docs/llm_context/operators.md	documents	tnnx	context pack
+docs/llm_context/backends_jax_mlx.md	documents	tnnx	context pack
+docs/llm_context/model_zoo.md	documents	tnnx	context pack
+docs/llm_context/validation.md	documents	tnnx	context pack
+docs/llm_context/extension_guide.md	documents	tnnx	context pack
+docs/llm_context/known_limits.md	documents	tnnx	context pack
+docs/llm_context/decisions.md	documents	tnnx	context pack
+docs/llm_context/context_pack_lint.md	documents	tnnx	context pack
+llms.txt	documents	tnnx	context pack
+tests/_support/flux.py	tests_model_path	FLUX	filename
+tests/integration/test_cli_transpile_jax.py	tests_backend	jax	filename
+tests/integration/test_cli_transpile_mlx.py	tests_backend	mlx	filename
+tests/integration/test_flux_fp8_jax_runtime_parity.py	tests_backend	jax	filename
+tests/integration/test_flux_fp8_jax_runtime_parity.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_jax_cli_prompt_npz.py	tests_backend	jax	filename
+tests/integration/test_flux_jax_cli_prompt_npz.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	tests_backend	jax	filename
+tests/integration/test_flux_jax_dummy_flux2_smoke.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_jax_image_smoke.py	tests_backend	jax	filename
+tests/integration/test_flux_jax_image_smoke.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_jax_prompt_injection.py	tests_backend	jax	filename
+tests/integration/test_flux_jax_prompt_injection.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	tests_backend	jax	filename
+tests/integration/test_flux_jax_prompt_to_image_smoke.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	tests_backend	jax	filename
+tests/integration/test_flux_prompt_to_image_jax_e2e.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_pytorch_dummy_flux2_smoke.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_pytorch_prompt_to_image_smoke.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	tests_backend	jax	filename
+tests/integration/test_flux_reduced_checkpoint_bridge_jax.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_text_encoder_checkpoint_runtime.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_text_encoder_checkpoint_transpile.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_text_encoder_jax_parity.py	tests_backend	jax	filename
+tests/integration/test_flux_text_encoder_jax_parity.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_text_encoder_source.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_tiny_config_e2e_jax.py	tests_backend	jax	filename
+tests/integration/test_flux_tiny_config_e2e_jax.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_tiny_config_e2e_torch.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_transformer_checkpoint_runtime.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_transformer_checkpoint_source.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_transformer_checkpoint_transpile.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_transformer_input_builder.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_transformer_jax_parity.py	tests_backend	jax	filename
+tests/integration/test_flux_transformer_jax_parity.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_transformer_source.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_vae_checkpoint_runtime.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_vae_checkpoint_transpile.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_vae_decoder_jax_parity.py	tests_backend	jax	filename
+tests/integration/test_flux_vae_decoder_jax_parity.py	tests_model_path	FLUX	filename
+tests/integration/test_flux_vae_decoder_source.py	tests_model_path	FLUX	filename
+tests/integration/test_gpt2_from_transformers_example_jax.py	tests_backend	jax	filename
+tests/integration/test_jax_bfloat16_cast_runtime_parity.py	tests_backend	jax	filename
+tests/integration/test_jax_instance_norm_runtime_parity.py	tests_backend	jax	filename
+tests/integration/test_jax_parity_conv.py	tests_backend	jax	filename
+tests/integration/test_jax_parity_mlp.py	tests_backend	jax	filename
+tests/integration/test_jax_reciprocal_squeeze_runtime_parity.py	tests_backend	jax	filename
+tests/integration/test_jax_reshape_runtime_parity.py	tests_backend	jax	filename
+tests/integration/test_jax_topology_runtime_parity.py	tests_backend	jax	filename
+tests/integration/test_mlx_instance_norm_runtime_parity.py	tests_backend	mlx	filename
+tests/integration/test_mlx_parity_conv.py	tests_backend	mlx	filename
+tests/integration/test_mlx_parity_mlp.py	tests_backend	mlx	filename
+tests/integration/test_nanogpt_tiny_example_jax.py	tests_backend	jax	filename
+tests/integration/test_qwen3_5_example_jax.py	tests_backend	jax	filename
+tests/integration/test_qwen3_5_example_jax.py	tests_model_path	Qwen3.5	filename
+tests/integration/test_qwen3_5_example_mlx.py	tests_backend	mlx	filename
+tests/integration/test_qwen3_5_example_mlx.py	tests_model_path	Qwen3.5	filename
+tests/integration/test_whisper_audio_real_mlx.py	tests_backend	mlx	filename
+tests/integration/test_whisper_audio_real_mlx.py	tests_model_path	Whisper	filename
+tests/integration/test_whisper_audio_transpile_source.py	tests_model_path	Whisper	filename
+tests/integration/test_whisper_tiny_example_mlx.py	tests_backend	mlx	filename
+tests/integration/test_whisper_tiny_example_mlx.py	tests_model_path	Whisper	filename
+tests/snapshots/expected/jax_gather_slice.py	tests_backend	jax	filename
+tests/snapshots/expected/jax_layernorm.py	tests_backend	jax	filename
+tests/snapshots/expected/jax_mlp.py	tests_backend	jax	filename
+tests/snapshots/expected/jax_qwen_fused_decoder_ops.py	tests_backend	jax	filename
+tests/snapshots/expected/jax_qwen_fused_decoder_ops.py	tests_model_path	Qwen3.5	filename
+tests/snapshots/expected/jax_qwen_ops.py	tests_backend	jax	filename
+tests/snapshots/expected/jax_qwen_ops.py	tests_model_path	Qwen3.5	filename
+tests/snapshots/expected/mlx_gather_slice.py	tests_backend	mlx	filename
+tests/snapshots/expected/mlx_layernorm.py	tests_backend	mlx	filename
+tests/snapshots/expected/mlx_mlp.py	tests_backend	mlx	filename
+tests/snapshots/expected/mlx_qwen_fused_decoder_ops.py	tests_backend	mlx	filename
+tests/snapshots/expected/mlx_qwen_fused_decoder_ops.py	tests_model_path	Qwen3.5	filename
+tests/snapshots/expected/mlx_qwen_ops.py	tests_backend	mlx	filename
+tests/snapshots/expected/mlx_qwen_ops.py	tests_model_path	Qwen3.5	filename
+tests/snapshots/test_jax_codegen_gather_slice_snapshot.py	tests_backend	jax	filename
+tests/snapshots/test_jax_codegen_layernorm_snapshot.py	tests_backend	jax	filename
+tests/snapshots/test_jax_codegen_snapshot.py	tests_backend	jax	filename
+tests/snapshots/test_mlx_codegen_gather_slice_snapshot.py	tests_backend	mlx	filename
+tests/snapshots/test_mlx_codegen_layernorm_snapshot.py	tests_backend	mlx	filename
+tests/snapshots/test_mlx_codegen_snapshot.py	tests_backend	mlx	filename
+tests/unit/test_flux_checkpoint_asset_inspection.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_checkpoint_prepare_report.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_fp8_jax_codegen_contract.py	tests_backend	jax	filename
+tests/unit/test_flux_fp8_jax_codegen_contract.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_prompt_bridge_contract.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_prompt_npz_contract.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_real_component_loader_contract.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_runtime_env_contract.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_submodule_inventory.py	tests_model_path	FLUX	filename
+tests/unit/test_flux_token_ids_npz_contract.py	tests_model_path	FLUX	filename
+tests/unit/test_jax_codegen_bfloat16.py	tests_backend	jax	filename
+tests/unit/test_jax_codegen_instance_norm.py	tests_backend	jax	filename
+tests/unit/test_jax_codegen_reciprocal_squeeze.py	tests_backend	jax	filename
+tests/unit/test_jax_codegen_reshape_contract.py	tests_backend	jax	filename
+tests/unit/test_jax_codegen_topology_contract.py	tests_backend	jax	filename
+tests/unit/test_mlx_codegen_instance_norm.py	tests_backend	mlx	filename
+tests/unit/test_mlx_conv_padding_validation.py	tests_backend	mlx	filename
