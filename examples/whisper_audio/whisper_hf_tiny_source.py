@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from subprocess import CalledProcessError, run
@@ -26,6 +28,7 @@ N_SAMPLES = CHUNK_LENGTH * SAMPLE_RATE
 N_FRAMES = N_SAMPLES // HOP_LENGTH
 DEFAULT_DECODE_TOKENS = 64
 _ASSET_MEL_FILTERS = Path(__file__).with_name("assets") / "mel_filters.npz"
+_X265_CELLARS = (Path("/opt/homebrew/Cellar/x265"), Path("/usr/local/Cellar/x265"))
 
 
 @dataclass(frozen=True, slots=True)
@@ -248,6 +251,36 @@ class WhisperTinyForTranspile(nn.Module):
         return model, cfg
 
 
+def _ffmpeg_retry_env(stderr: str) -> dict[str, str] | None:
+    match = re.search(r"Library not loaded: .*/(libx265\.\d+\.dylib)", stderr)
+    if not match:
+        return None
+    dylib = match.group(1)
+    for cellar in _X265_CELLARS:
+        for candidate in sorted(cellar.glob(f"*/lib/{dylib}"), reverse=True):
+            env = os.environ.copy()
+            current = env.get("DYLD_LIBRARY_PATH")
+            env["DYLD_LIBRARY_PATH"] = (
+                str(candidate.parent) if not current else f"{candidate.parent}{os.pathsep}{current}"
+            )
+            return env
+    return None
+
+
+def _run_ffmpeg(cmd: list[str]) -> bytes:
+    try:
+        return run(cmd, capture_output=True, check=True).stdout
+    except CalledProcessError as exc:
+        stderr = exc.stderr.decode(errors="replace")
+        retry_env = _ffmpeg_retry_env(stderr)
+        if retry_env is not None:
+            try:
+                return run(cmd, capture_output=True, check=True, env=retry_env).stdout
+            except CalledProcessError as retry_exc:
+                stderr = retry_exc.stderr.decode(errors="replace")
+        raise RuntimeError(f"Failed to load audio via ffmpeg: {stderr}") from exc
+
+
 def load_audio(path: str | Path, sr: int = SAMPLE_RATE) -> np.ndarray[Any, Any]:
     cmd = [
         "ffmpeg",
@@ -266,10 +299,7 @@ def load_audio(path: str | Path, sr: int = SAMPLE_RATE) -> np.ndarray[Any, Any]:
         str(sr),
         "-",
     ]
-    try:
-        output = run(cmd, capture_output=True, check=True).stdout
-    except CalledProcessError as exc:
-        raise RuntimeError(f"Failed to load audio via ffmpeg: {exc.stderr.decode()}") from exc
+    output = _run_ffmpeg(cmd)
     return np.frombuffer(output, np.int16).astype(np.float32) / 32768.0
 
 

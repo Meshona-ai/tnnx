@@ -87,6 +87,7 @@ def _write_compile_metadata(
         "node_count": len(ir.nodes),
         "tensor_count": len(ir.tensors),
         "compile_config": cfg.to_metadata(),
+        "metadata_only_config_fields": ["deterministic", "emit_shape_asserts", "opset"],
         "applied_passes": applied_passes,
         "resource_adaptation_status": (
             "explicit_budget_metadata_only; no automatic resource-search planner"

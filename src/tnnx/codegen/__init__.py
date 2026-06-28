@@ -1,3 +1,3 @@
-from .common import NameGenerator, order_nodes_for_emission
+from .common import order_nodes_for_emission
 
-__all__ = ["NameGenerator", "order_nodes_for_emission"]
+__all__ = ["order_nodes_for_emission"]

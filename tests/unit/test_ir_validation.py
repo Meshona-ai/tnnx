@@ -39,3 +39,44 @@ def test_validate_graph_rejects_wrong_input_arity() -> None:
 
     with pytest.raises(ValueError, match="expects at least"):
         validate_graph(ir)
+
+
+def test_validate_graph_rejects_duplicate_producers() -> None:
+    ir = _base_ir()
+    ir.tensors["z"] = TensorRef(name="z", dtype="float32", shape=[2, 3], kind="intermediate")
+    ir.nodes = [
+        OpNode(id="n0", op="RELU", inputs=["x"], outputs=["z"], attrs={}),
+        OpNode(id="n1", op="RELU", inputs=["x"], outputs=["z"], attrs={}),
+        OpNode(id="n2", op="RELU", inputs=["z"], outputs=["y"], attrs={}),
+    ]
+
+    with pytest.raises(ValueError, match="produced by both"):
+        validate_graph(ir)
+
+
+def test_validate_graph_accepts_out_of_order_nodes_with_provenance() -> None:
+    ir = _base_ir()
+    ir.tensors["z"] = TensorRef(name="z", dtype="float32", shape=[2, 3], kind="intermediate")
+    ir.nodes = [
+        OpNode(id="n1", op="RELU", inputs=["z"], outputs=["y"], attrs={}),
+        OpNode(id="n0", op="RELU", inputs=["x"], outputs=["z"], attrs={}),
+    ]
+
+    validate_graph(ir)
+
+
+def test_validate_graph_rejects_input_without_provenance() -> None:
+    ir = _base_ir()
+    ir.tensors["z"] = TensorRef(name="z", dtype="float32", shape=[2, 3], kind="intermediate")
+    ir.nodes = [OpNode(id="n0", op="RELU", inputs=["z"], outputs=["y"], attrs={})]
+
+    with pytest.raises(ValueError, match="has no producer"):
+        validate_graph(ir)
+
+
+def test_validate_graph_rejects_output_without_provenance() -> None:
+    ir = _base_ir()
+    ir.nodes = []
+
+    with pytest.raises(ValueError, match="has no producer"):
+        validate_graph(ir)

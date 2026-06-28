@@ -8,7 +8,7 @@ Review base: `local-main-initial-review-base` / `91bf6abf1f392863d0c3cdca692d327
 - `architecture.md`: current package layout and ownership boundaries.
 - `dataflow.md`: ONNX -> IR -> passes -> JAX/MLX artifact flow.
 - `validation.md`: commands, baseline results, and tiered gates.
-- `.codex/plans/tnnx_second_pass/PLAN.md`: authoritative execution plan.
+- `context_pack_lint.md`: current context-pack drift checks and update rules.
 
 ## Pages
 
@@ -40,7 +40,7 @@ Review base: `local-main-initial-review-base` / `91bf6abf1f392863d0c3cdca692d327
 - `src/tnnx/runtime/`: weight `.npz` helpers.
 - `examples/`: small models, Qwen, Whisper, FLUX, model-zoo smoke paths.
 - `tests/`: unit, integration, snapshots, environment contracts.
-- `scripts/research/`: unowned research/benchmark scripts marked `VERIFY`.
+- `scripts/`: reusable validation gates used by local checks and CI.
 
 ## Key Commands
 
@@ -50,6 +50,10 @@ Review base: `local-main-initial-review-base` / `91bf6abf1f392863d0c3cdca692d327
 - `uv run pytest -q`
 - `uv sync --dev --group examples && uv run pytest -q`
 - `uv build`
+- `uv run python scripts/check_generated_code.py`
+- `uv run python scripts/check_package_contents.py`
+- `uv run python scripts/check_residue.py`
+- `uv run python scripts/check_context_pack.py`
 - `uv run tnnx transpile --onnx <model.onnx> --target jax --out <out>`
 - `uv run python -m examples.model_zoo.transpile_smoke --target jax --model ResNet-18`
 
@@ -64,4 +68,4 @@ Review base: `local-main-initial-review-base` / `91bf6abf1f392863d0c3cdca692d327
 
 Current code supports 69 semantic IR ops in both JAX and MLX dispatch. ONNX ingest maps 70 ONNX op spellings into 67 semantic ops. `RELU6` and `SILU` are schema/codegen-supported but not currently produced by `ONNX_TO_SEMANTIC` directly; treat them as generated-IR/internal support until a mapping or lowering is verified.
 
-Retired scope stays out: FPGA/HLS/RTL/C/C++/native-runtime/web/API-server material. The residue audit at review base found no true hits.
+Retired low-level and web/server scope stays out. The reusable residue guard found no true hits.

@@ -1,8 +1,21 @@
 from __future__ import annotations
 
-from tnnx.codegen.jax_codegen import render_jax_module
-from tnnx.codegen.mlx_codegen import render_mlx_module
+import importlib.util
+from pathlib import Path
+
+import numpy as np
+import pytest
+
+from tnnx.codegen.mlx_codegen import emit_mlx_module
 from tnnx.ir.types import GraphIR, OpNode, TensorRef
+
+
+def _load_module(path: Path):
+    spec = importlib.util.spec_from_file_location("generated_mlx_topology", path)
+    assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 def _out_of_order_split_ir() -> GraphIR:
@@ -37,23 +50,14 @@ def _out_of_order_split_ir() -> GraphIR:
     )
 
 
-def test_jax_codegen_schedules_nodes_before_emitting_code() -> None:
-    source = render_jax_module(_out_of_order_split_ir())
+def test_mlx_topology_scheduler_runtime_parity(tmp_path: Path) -> None:
+    _ = pytest.importorskip("mlx.core")
 
-    split_index = source.index(
-        '_node_produce = _onnx_split(tensors["x"], None, axis=1, num_outputs=2)'
-    )
-    consume_index = source.index('tensors["y"] = tensors["split_a"]')
+    module_path = emit_mlx_module(_out_of_order_split_ir(), tmp_path / "generated_mlx_topology")
+    module = _load_module(module_path)
 
-    assert split_index < consume_index
+    x_input = np.arange(4, dtype=np.float32).reshape(1, 2, 2)
+    actual = np.asarray(module.forward({}, {"x": x_input})["y"])
+    expected = np.split(x_input, 2, axis=1)[0]
 
-
-def test_mlx_codegen_schedules_nodes_before_emitting_code() -> None:
-    source = render_mlx_module(_out_of_order_split_ir())
-
-    split_index = source.index(
-        '_node_produce = _onnx_split(tensors["x"], None, axis=1, num_outputs=2)'
-    )
-    consume_index = source.index('tensors["y"] = tensors["split_a"]')
-
-    assert split_index < consume_index
+    assert np.array_equal(actual, expected)

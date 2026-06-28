@@ -8,19 +8,21 @@
 - Emit readable Python for JAX and MLX. Generated code is an artifact users can inspect.
 - Treat examples as proof lanes, not hidden core product code.
 - Keep optional performance-only optimization out unless needed for correctness or retained named-model viability.
+- Keep Python support restricted to 3.14 for this branch; CI and package metadata both say `>=3.14,<3.15`.
+- Keep `deterministic`, `emit_shape_asserts`, and `opset` in `CompileConfig` as metadata-only fields for this release.
 
 ## Removed Scope
 
-FPGA/HLS/RTL/C/C++ native runtime/codegen, hardware vendor toolchains, web servers, and web APIs are out of scope. The second-pass residue audit found no true tracked residue.
+Retired low-level and web/server surfaces are out of scope. The reusable residue guard found no true tracked residue.
 
 ## Backend Parity
 
-JAX and MLX should share semantic coverage and retained behavior gates. They do not need identical implementation, but backend-specific differences must be explicit and tested.
+JAX and MLX share semantic coverage and topological emission ordering. They do not need identical implementation, but backend-specific differences must be explicit and tested.
 
 ## Public API
 
-The public API should stay small: `transpile_onnx`, config dataclasses, manifest, and CLI. Metadata-only public knobs need explicit docs or removal.
+The public API should stay small: `transpile_onnx`, config dataclasses, manifest, and CLI. Metadata-only public knobs must stay explicitly documented.
 
 ## Future Work Not Done Now
 
-This audit does not implement product fixes, new operators, new model support, new backend support, or dependency changes. It creates the plan and context needed to do those safely later.
+This branch does not add new model/backend support. It improves validation reliability, public claims, invariants, packaging, and context-pack maintenance around the retained behavior.

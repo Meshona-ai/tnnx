@@ -42,7 +42,7 @@ Optional flags:
 
 `CompileConfig` fields: `deterministic`, `infer_shapes`, `emit_shape_asserts`, `emit_graph_ir`, `opset`, `entrypoint`, `weights_filename`, `enabled_passes`, `resource_budget`.
 
-Known uncertainty: `deterministic`, `emit_shape_asserts`, and `opset` are currently recorded in metadata but do not clearly alter behavior. Treat as `VERIFY` until task T05 resolves the public contract.
+Current behavior: `infer_shapes`, `emit_graph_ir`, `entrypoint`, `weights_filename`, `enabled_passes`, and `resource_budget` affect emitted artifacts or metadata. `deterministic`, `emit_shape_asserts`, and `opset` are intentionally metadata-only in this release and are listed in `compile_metadata.json` under `metadata_only_config_fields`.
 
 ## Stable Behavior
 
@@ -50,6 +50,7 @@ Known uncertainty: `deterministic`, `emit_shape_asserts`, and `opset` are curren
 - Unsupported target raises `ValueError`.
 - Unsupported compile pass raises `ValueError` or argparse type error.
 - Generated modules expose `load_weights` and `forward`.
+- `load_onnx_to_ir` records ONNX shape-inference status in `GraphIR.metadata`.
 
 ## Internal/Unstable Behavior
 

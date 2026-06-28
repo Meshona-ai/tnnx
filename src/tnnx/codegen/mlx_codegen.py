@@ -3,9 +3,12 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
 
 from ..ir.types import GraphIR, OpNode
+from .common import attr_float as _attr_float
+from .common import attr_int as _attr_int
+from .common import attr_int_list as _attr_int_list
+from .common import order_nodes_for_emission
 
 
 def _tensor_expr(name: str, ir: GraphIR) -> str:
@@ -27,38 +30,6 @@ def _mlx_conv_weight_expr(name: str, ir: GraphIR) -> tuple[str, bool]:
     if len(tensor.shape) not in {3, 4}:
         return _tensor_expr(name, ir), False
     return f'params["{_mlx_conv_weight_name(name)}"]', True
-
-
-def _attr_int(attrs: dict[str, Any], key: str, default: int) -> int:
-    value = attrs.get(key, default)
-    if isinstance(value, bool):
-        return int(value)
-    if isinstance(value, int | float | str):
-        return int(value)
-    return default
-
-
-def _attr_int_list(attrs: dict[str, Any], key: str, default: list[int]) -> list[int]:
-    value = attrs.get(key, default)
-    if isinstance(value, list):
-        out: list[int] = []
-        for item in value:
-            if isinstance(item, bool):
-                out.append(int(item))
-            elif isinstance(item, int | float | str):
-                out.append(int(item))
-        if out:
-            return out
-    return default
-
-
-def _attr_float(attrs: dict[str, Any], key: str, default: float) -> float:
-    value = attrs.get(key, default)
-    if isinstance(value, bool):
-        return float(int(value))
-    if isinstance(value, int | float | str):
-        return float(value)
-    return default
 
 
 def _ops_in_graph(ir: GraphIR) -> set[str]:
@@ -1211,7 +1182,7 @@ def render_mlx_module(ir: GraphIR, *, entrypoint: str = "forward") -> str:
     )
     for input_name in ir.inputs:
         lines.append(f'    tensors["{input_name}"] = mx.asarray(inputs["{input_name}"])')
-    for node in ir.nodes:
+    for node in order_nodes_for_emission(ir):
         lines.extend(_emit_node_lines(node, ir))
     outputs_literal = ", ".join([f'"{o}": tensors["{o}"]' for o in ir.outputs])
     lines.append(f"    return {{{outputs_literal}}}")

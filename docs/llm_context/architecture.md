@@ -38,4 +38,4 @@ Repo-local owners from `AGENTS.md` apply:
 
 The codebase is intentionally direct: dataclasses, explicit operator dispatch, generated-source string assembly, and simple pass functions. There is no plugin framework and no registry beyond dictionaries such as `ONNX_TO_SEMANTIC` and `SEMANTIC_SCHEMAS`.
 
-The main architectural risks are not missing abstraction; they are stale public claims, environment-heavy tests, scheduler drift between backends, and public config fields that look behavioral but are currently metadata-only.
+The main architectural risks are environment-heavy model paths and keeping public claims synchronized with tests. Scheduler drift, prune no-op behavior, and metadata-only config ambiguity were addressed in the execution branch.

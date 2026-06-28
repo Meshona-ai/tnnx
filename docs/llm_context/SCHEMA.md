@@ -15,7 +15,7 @@ Frontmatter is optional. If added later, keep it small: `owner`, `status`, `last
 ## Cross-Linking
 
 - Link human pages through `index.md`.
-- Link plan work through `.codex/plans/tnnx_second_pass/PLAN.md`.
+- Do not link final context-pack claims to temporary `.codex/plans/**` execution artifacts.
 - Do not deep-link to generated indexes as the only source for a claim.
 
 ## Machine Indexes

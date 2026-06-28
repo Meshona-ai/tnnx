@@ -1,12 +1,10 @@
 from __future__ import annotations
 
 import json
-import os
 import sys
 from pathlib import Path
 
 import onnx
-import pytest
 
 from tnnx.api import transpile_onnx
 from tnnx.config import CompileConfig
@@ -56,9 +54,6 @@ def test_whisper_audio_source_exports_supported_graph(tmp_path: Path) -> None:
 
 
 def test_whisper_audio_transpiled_mlx_e2e_when_enabled(tmp_path: Path) -> None:
-    if os.getenv("RUN_MLX_E2E", "0") != "1":
-        pytest.skip("Set RUN_MLX_E2E=1 to run the full MLX Whisper transpile+decode path.")
-
     repo_root = Path(__file__).resolve().parents[2]
     if str(repo_root) not in sys.path:
         sys.path.insert(0, str(repo_root))

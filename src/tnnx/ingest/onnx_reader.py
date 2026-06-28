@@ -18,6 +18,27 @@ class UnsupportedOpError(ValueError):
     pass
 
 
+def _validate_external_data_locations(model: ModelProto, base_dir: Path) -> None:
+    root = base_dir.resolve()
+    for initializer in model.graph.initializer:
+        if initializer.data_location != TensorProto.EXTERNAL:
+            continue
+        location = next(
+            (entry.value for entry in initializer.external_data if entry.key == "location"),
+            None,
+        )
+        if not location:
+            raise ValueError(f"External ONNX tensor '{initializer.name}' is missing a location.")
+        candidate = (root / location).resolve()
+        try:
+            candidate.relative_to(root)
+        except ValueError as exc:
+            raise ValueError(
+                f"External ONNX tensor '{initializer.name}' points outside the model directory: "
+                f"{location}"
+            ) from exc
+
+
 def extract_initializers(model: ModelProto) -> dict[str, np.ndarray[Any, Any]]:
     graph = model.graph
     initializers: dict[str, np.ndarray[Any, Any]] = {}
@@ -77,12 +98,19 @@ def load_onnx_to_ir(
     infer_shapes: bool = True,
 ) -> tuple[GraphIR, dict[str, np.ndarray[Any, Any]]]:
     path = Path(onnx_path)
-    model = onnx.load(path)
+    model = onnx.load(path, load_external_data=False)
+    _validate_external_data_locations(model, path.parent)
+    onnx.load_external_data_for_model(model, base_dir=str(path.parent))
+    metadata: dict[str, Any] = {"source": "onnx", "deterministic": True}
     if infer_shapes:
         try:
             model = onnx.shape_inference.infer_shapes(model)
-        except Exception:
-            pass
+            metadata["shape_inference"] = "ok"
+        except Exception as exc:
+            metadata["shape_inference"] = "failed"
+            metadata["shape_inference_error"] = f"{type(exc).__name__}: {exc}"
+    else:
+        metadata["shape_inference"] = "disabled"
 
     graph = model.graph
     initializers = extract_initializers(model)
@@ -159,7 +187,7 @@ def load_onnx_to_ir(
         nodes=nodes,
         inputs=onnx_inputs,
         outputs=onnx_outputs,
-        metadata={"source": "onnx", "deterministic": True},
+        metadata=metadata,
     )
     validate_graph(ir)
     return ir, initializers

@@ -82,7 +82,7 @@ Semantic schema count: 69. ONNX ingest map count: 70 spellings into 67 semantic 
 
 ## Unsupported-Op Behavior
 
-Unknown ONNX ops raise `UnsupportedOpError` during ingest. This happens before pruning, so a dead unsupported ONNX node can still block ingest until task T07/T08 clarifies pruning and IR invariants.
+Unknown ONNX ops raise `UnsupportedOpError` during ingest. This happens before GraphIR pruning, so a dead unsupported ONNX node still blocks ingest until that ONNX op is mapped or removed upstream.
 
 ## Add Or Update An Operator
 

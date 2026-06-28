@@ -2,7 +2,7 @@
 
 ## ONNX Input Assumptions
 
-`load_onnx_to_ir` accepts an ONNX path and calls `onnx.load`. It optionally runs ONNX shape inference. It assumes graph initializers and value info are enough to build tensor refs. Shape inference errors are currently swallowed and must be planned as a diagnostic improvement.
+`load_onnx_to_ir` accepts an ONNX path, validates external-data locations, loads external tensor data from the ONNX file directory, and optionally runs ONNX shape inference. Shape-inference status is recorded in `GraphIR.metadata`; failures continue with an actionable diagnostic instead of being silent.
 
 ## Graph Construction
 
@@ -15,7 +15,7 @@
 
 ## Constants And External Data
 
-Weights are saved to `weights.npz`. Small initializer values up to 64 scalars are passed into shape propagation as runtime values. External-data safety has not been characterized; it is a planned security task.
+Weights are saved to `weights.npz`. Small initializer values up to 64 scalars are passed into shape propagation as runtime values. External ONNX tensor locations must stay under the model directory before data is loaded.
 
 ## Shape And Dtype Handling
 

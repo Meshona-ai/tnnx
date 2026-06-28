@@ -3,9 +3,12 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
 
 from ..ir.types import GraphIR, OpNode
+from .common import attr_float as _attr_float
+from .common import attr_int as _attr_int
+from .common import attr_int_list as _attr_int_list
+from .common import order_nodes_for_emission
 
 
 def _tensor_expr(name: str, ir: GraphIR) -> str:
@@ -15,38 +18,6 @@ def _tensor_expr(name: str, ir: GraphIR) -> str:
     if tensor.kind == "initializer":
         return f'params["{name}"]'
     return f'tensors["{name}"]'
-
-
-def _attr_int(attrs: dict[str, Any], key: str, default: int) -> int:
-    value = attrs.get(key, default)
-    if isinstance(value, bool):
-        return int(value)
-    if isinstance(value, int | float | str):
-        return int(value)
-    return default
-
-
-def _attr_int_list(attrs: dict[str, Any], key: str, default: list[int]) -> list[int]:
-    value = attrs.get(key, default)
-    if isinstance(value, list):
-        out: list[int] = []
-        for item in value:
-            if isinstance(item, bool):
-                out.append(int(item))
-            elif isinstance(item, int | float | str):
-                out.append(int(item))
-        if out:
-            return out
-    return default
-
-
-def _attr_float(attrs: dict[str, Any], key: str, default: float) -> float:
-    value = attrs.get(key, default)
-    if isinstance(value, bool):
-        return float(int(value))
-    if isinstance(value, int | float | str):
-        return float(value)
-    return default
 
 
 def _ops_in_graph(ir: GraphIR) -> set[str]:
@@ -83,29 +54,6 @@ def _clip_arg(node: OpNode, ins: list[str], input_idx: int, attr_name: str) -> s
 def _slot_exprs(node: OpNode, ins: list[str]) -> dict[int, str]:
     slots = _attr_int_list(node.attrs, "input_slots", list(range(len(ins))))
     return {slot: expr for slot, expr in zip(slots, ins, strict=False)}
-
-
-def _scheduled_nodes(ir: GraphIR) -> list[OpNode]:
-    remaining = list(ir.nodes)
-    available = set(ir.inputs)
-    available.update(name for name, tensor in ir.tensors.items() if tensor.kind == "initializer")
-    ordered: list[OpNode] = []
-
-    while remaining:
-        progressed = False
-        deferred: list[OpNode] = []
-        for node in remaining:
-            if all(name in available for name in node.inputs):
-                ordered.append(node)
-                available.update(node.outputs)
-                progressed = True
-            else:
-                deferred.append(node)
-        if not progressed:
-            ordered.extend(remaining)
-            break
-        remaining = deferred
-    return ordered
 
 
 _STATIC_META_INPUT_SLOTS: dict[str, tuple[int, ...]] = {
@@ -1277,7 +1225,7 @@ def render_jax_module(ir: GraphIR, *, entrypoint: str = "forward") -> str:
 
     for input_name in ir.inputs:
         lines.append(f'    tensors["{input_name}"] = jnp.asarray(inputs["{input_name}"])')
-    for node in _scheduled_nodes(ir):
+    for node in order_nodes_for_emission(ir):
         lines.extend(_emit_node_lines(node, ir, static_meta))
     outputs_literal = ", ".join([f'"{o}": tensors["{o}"]' for o in ir.outputs])
     lines.append(f"    return {{{outputs_literal}}}")

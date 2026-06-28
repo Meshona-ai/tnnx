@@ -9,9 +9,8 @@ Use it in this order:
 3. Read `operators.md` and `backends_jax_mlx.md` before touching codegen or semantic ops.
 4. Read `model_zoo.md` and `validation.md` before changing examples or tests.
 5. Read `known_limits.md` before interpreting support claims.
-6. Read `.codex/plans/tnnx_second_pass/PLAN.md` for the current execution backlog.
 
-Canonical sources are the code, tests, `pyproject.toml`, README/docs, and observed command output in the plan. Markdown pages here are curated summaries. JSON/JSONL/TSV files are derived aids and must be refreshed after material changes.
+Canonical sources are the code, tests, `pyproject.toml`, README/docs, and observed command output from validation runs. Markdown pages here are curated summaries. JSON/JSONL/TSV files are derived aids and must be refreshed after material changes. Temporary `.codex/plans/**` execution artifacts are excluded from the final branch head and from generated context indexes.
 
 Update rules:
 

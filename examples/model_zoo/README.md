@@ -19,3 +19,5 @@ Behavior:
 - `planned`: intentionally listed but not auto-exported from this workspace.
 
 Artifacts go under the `--output-dir` you pass (default: `examples/out/model_zoo/`).
+
+Support claims and exact gates live in `../../docs/model_support.md`.

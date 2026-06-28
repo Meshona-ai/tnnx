@@ -17,8 +17,7 @@ Read first:
 - `docs/llm_context/validation.md`
 - `docs/llm_context/extension_guide.md`
 - `docs/llm_context/known_limits.md`
-- `.codex/plans/tnnx_second_pass/PLAN.md`
 
-Install/test/validation sources: `README.md`, `examples/README.md`, `scripts/check.sh`, `.pre-commit-config.yaml`, `pyproject.toml`, and `docs/llm_context/validation.md`.
+Install/test/validation sources: `README.md`, `docs/testing.md`, `examples/README.md`, `scripts/check.sh`, `.pre-commit-config.yaml`, `pyproject.toml`, and `docs/llm_context/validation.md`.
 
-Generated indexes are derived from the current tree at `91bf6abf1f392863d0c3cdca692d3272efdceb4b` plus this context-pack commit. Refresh `docs/llm_context/code_index.json`, `symbol_index.jsonl`, and `graph_edges.tsv` after code, test, docs, public API, model, or backend changes.
+Generated indexes are derived from the execution branch final codebase, excluding temporary `.codex/plans/**` execution artifacts. Refresh `docs/llm_context/code_index.json`, `symbol_index.jsonl`, and `graph_edges.tsv` with `uv run python scripts/check_context_pack.py --write` after code, test, docs, public API, model, or backend changes.

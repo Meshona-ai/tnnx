@@ -12,6 +12,8 @@ If you are preparing a walkthrough, start here:
 
 ## Quick Start
 
+Requires Python 3.14.
+
 ```bash
 uv sync --dev
 uv run tnnx transpile --onnx model.onnx --target jax --out generated/jax
@@ -117,25 +119,8 @@ Update snapshots intentionally:
 UPDATE_SNAPSHOTS=1 uv run pytest -q tests/snapshots
 ```
 
-## Supported Semantic Ops (v0)
+## Support Matrices
 
-| Op | ONNX Source | JAX | MLX |
-| --- | --- | --- | --- |
-| ADD | Add | yes | yes |
-| CONV2D | Conv (1D/2D) | yes (1D/2D) | yes (2D + 1D via reshape; symmetric pads) |
-| DIV | Div | yes | yes |
-| ERF | Erf | yes | yes |
-| EXP | Exp | yes | yes |
-| GATHER | Gather | yes | yes |
-| GEMM | Gemm | yes | yes |
-| GELU | Gelu | yes | yes |
-| IDENTITY | Identity | yes | yes |
-| LAYERNORM | LayerNormalization | yes | yes |
-| LOG | Log | yes | yes |
-| MATMUL | MatMul | yes | yes |
-| MUL | Mul | yes | yes |
-| RELU | Relu | yes | yes |
-| RESHAPE | Reshape | yes | yes |
-| SLICE | Slice | yes | yes |
-| SOFTMAX | Softmax | yes | yes |
-| TRANSPOSE | Transpose | yes | yes |
+- `docs/operators.md`: generated supported-operator matrix.
+- `docs/model_support.md`: named model tiers, gates, assets, and blockers.
+- `docs/testing.md`: local/CI gates and environment-gated lanes.

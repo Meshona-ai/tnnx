@@ -25,7 +25,10 @@ In a short session, prove five things:
 
 - `demo-runbook.md`: exact commands, talk track, fallbacks, and timing.
 - `architecture.md`: pipeline, artifacts, and design choices worth explaining.
+- `model_support.md`: named model tiers, gates, assets, and blockers.
+- `operators.md`: generated operator matrix from schema, ingest map, and backend dispatch.
 - `roadmap.md`: optimization story for the next 12 months.
+- `testing.md`: local gate, CI gate, pytest markers, and environment gates.
 
 ## What Exists Today
 

@@ -94,6 +94,11 @@ def test_transpile_onnx_records_pass_and_resource_metadata(tmp_path: str) -> Non
     assert metadata["target"] == "jax"
     assert metadata["graph_name"] == "api_graph"
     assert metadata["applied_passes"] == ["normalize"]
+    assert metadata["metadata_only_config_fields"] == [
+        "deterministic",
+        "emit_shape_asserts",
+        "opset",
+    ]
     assert metadata["compile_config"]["enabled_passes"] == ["normalize"]
     assert metadata["compile_config"]["resource_budget"] == {
         "target_hardware": "cpu-ci",

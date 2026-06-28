@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from .types import AttrValue, GraphIR, OpNode
+from .types import GraphIR, OpNode
 
 
 @dataclass(frozen=True, slots=True)
@@ -238,18 +238,49 @@ def validate_node(node: OpNode) -> None:
 
 
 def validate_graph(ir: GraphIR) -> None:
+    graph_sources = set(ir.inputs)
+    graph_sources.update(
+        name for name, tensor in ir.tensors.items() if tensor.kind == "initializer"
+    )
+    produced: dict[str, str] = {}
+
     for node in ir.nodes:
         validate_node(node)
-        for input_name in node.inputs:
-            if input_name not in ir.tensors:
-                raise KeyError(f"Node '{node.id}' references unknown input tensor: {input_name}")
+        node_outputs: set[str] = set()
         for output_name in node.outputs:
             if output_name not in ir.tensors:
                 raise KeyError(f"Node '{node.id}' references unknown output tensor: {output_name}")
+            if output_name in node_outputs:
+                raise ValueError(f"Node '{node.id}' lists duplicate output tensor: {output_name}")
+            if output_name in produced:
+                raise ValueError(
+                    f"Tensor '{output_name}' is produced by both '{produced[output_name]}' "
+                    f"and '{node.id}'."
+                )
+            if output_name in ir.inputs or ir.tensors[output_name].kind == "initializer":
+                raise ValueError(
+                    f"Node '{node.id}' output '{output_name}' conflicts with graph input "
+                    "or initializer provenance."
+                )
+            node_outputs.add(output_name)
+            produced[output_name] = node.id
+
+    provenance = graph_sources | set(produced)
+    for node in ir.nodes:
+        for input_name in node.inputs:
+            if input_name not in ir.tensors:
+                raise KeyError(f"Node '{node.id}' references unknown input tensor: {input_name}")
+            if input_name not in provenance:
+                raise ValueError(
+                    f"Node '{node.id}' input tensor '{input_name}' has no producer, "
+                    "graph input, or initializer."
+                )
+
     for key in ir.inputs + ir.outputs:
         if key not in ir.tensors:
             raise KeyError(f"Graph key is missing in tensor table: {key}")
-
-
-def coerce_attr(value: AttrValue) -> AttrValue:
-    return value
+    for output_name in ir.outputs:
+        if output_name not in provenance:
+            raise ValueError(
+                f"Graph output '{output_name}' has no producer, graph input, or initializer."
+            )

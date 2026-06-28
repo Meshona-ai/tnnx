@@ -37,6 +37,14 @@ class ResourceBudget:
 
 @dataclass(slots=True)
 class CompileConfig:
+    """Compile-time options for artifact generation.
+
+    `infer_shapes`, `emit_graph_ir`, `entrypoint`, `weights_filename`, and
+    `enabled_passes` affect current behavior. `deterministic`,
+    `emit_shape_asserts`, and `opset` are recorded as explicit metadata only;
+    they do not rewrite ONNX ops or generated backend code in this release.
+    """
+
     deterministic: bool = True
     infer_shapes: bool = True
     emit_shape_asserts: bool = True

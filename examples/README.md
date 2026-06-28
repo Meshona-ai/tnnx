@@ -127,6 +127,8 @@ uv run python -m examples.model_zoo.transpile_smoke \
 Artifacts land under the directory you pass, with one ONNX file plus one
 `generated_<target>_<slug>/` folder per job.
 
+See `../docs/model_support.md` for model tiers, required assets, and exact validation gates.
+
 ## Viewing transpiled code
 
 For any generated example, inspect these files:

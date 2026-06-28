@@ -29,6 +29,20 @@ def test_flux_runtime_env_resolves_hf_token_from_dotenv(
     assert runtime_env.resolve_hf_token() == "test-token"
 
 
+def test_flux_runtime_env_prefers_hf_token_from_environment(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    runtime_env = _runtime_env_module()
+    dotenv_path = tmp_path / ".env"
+    dotenv_path.write_text("HUGGING_FACE_TOKEN=dotenv-token\n", encoding="utf-8")
+
+    monkeypatch.setenv(runtime_env.TOKEN_ENV_VAR, "env-token")
+    monkeypatch.setattr(runtime_env, "DOTENV_PATH", dotenv_path)
+
+    assert runtime_env.resolve_hf_token() == "env-token"
+
+
 def test_flux_runtime_env_required_hub_patterns_cover_flux2_layout() -> None:
     runtime_env = _runtime_env_module()
 
