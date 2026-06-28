@@ -30,6 +30,44 @@ All targets emit:
 By default, targets also emit:
 - `graph_ir.json` (disable with `--no-graph-ir`)
 
+## PyTorch Module To JAX / MLX
+
+`tnnx` does not transpile an arbitrary `.py` file directly. The boundary is
+ONNX: import or define your `torch.nn.Module`, export it with representative
+inputs, then run `tnnx transpile`.
+
+```python
+# export_my_model.py
+from pathlib import Path
+
+import torch
+
+from my_model import MyModel
+
+out = Path("generated")
+out.mkdir(exist_ok=True)
+
+model = MyModel().eval()
+sample = torch.randn(1, 8)
+torch.onnx.export(
+    model,
+    sample,
+    out / "my_model.onnx",
+    input_names=["x"],
+    output_names=["y"],
+    opset_version=18,
+)
+```
+
+```bash
+uv run python export_my_model.py
+uv run tnnx transpile --onnx generated/my_model.onnx --target jax --out generated/jax
+uv run tnnx transpile --onnx generated/my_model.onnx --target mlx --out generated/mlx
+```
+
+The generated backend source lands in `generated/jax/model_jax.py` or
+`generated/mlx/model_mlx.py`; weights land in `weights.npz`.
+
 ## Export behavior note
 
 The current PyTorch export path is example-input driven. When you export a model

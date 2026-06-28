@@ -202,11 +202,11 @@
       "exported_symbols": [],
       "file_kind": "md",
       "imports": [],
-      "line_count": 126,
+      "line_count": 164,
       "path": "README.md",
       "purpose": "Repository documentation",
-      "sha256": "eecdc0310e4b1cc53e1fa75b98a0d8072bc94da9d3ff34ed053b58611e5b78c3",
-      "size_bytes": 3640,
+      "sha256": "89d16e6e013e0a98bb74f7567ce592c42ec33dd620ae7852a14c56a1a9bd4200",
+      "size_bytes": 4559,
       "subsystem": "docs"
     },
     {
