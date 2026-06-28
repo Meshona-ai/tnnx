@@ -1,0 +1,26 @@
+.venv/
+.uv-cache/
+.env
+.DS_Store
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Generated transpiler artifacts.
+generated/
+*.onnx
+*.npz
+
+# Required checked-in data asset; keep it despite the generated .npz rule above.
+!examples/whisper_audio/assets/mel_filters.npz
+
+# Example run outputs. Keep directories in the tree, ignore their generated contents.
+examples/out/*
+!examples/out/.gitkeep
+examples/nanogpt/out/*
+!examples/nanogpt/out/.gitkeep
+examples/whisper_audio/out/*
+!examples/whisper_audio/out/.gitkeep
