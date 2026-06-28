@@ -368,6 +368,7 @@ tests/_support/flux.py	imports	sys	python AST import
 tests/_support/flux.py	imports	typing	python AST import
 tests/conftest.py	imports	__future__	python AST import
 tests/conftest.py	imports	collections.abc	python AST import
+tests/conftest.py	imports	pathlib	python AST import
 tests/conftest.py	imports	pytest	python AST import
 tests/integration/test_cli_transpile_custom_artifacts.py	imports	__future__	python AST import
 tests/integration/test_cli_transpile_custom_artifacts.py	imports	json	python AST import
@@ -868,6 +869,7 @@ tests/unit/test_backend_semantic_coverage.py	imports	tnnx.ir.schema	python AST i
 tests/unit/test_environment_contract.py	imports	__future__	python AST import
 tests/unit/test_environment_contract.py	imports	importlib.metadata	python AST import
 tests/unit/test_environment_contract.py	imports	sys	python AST import
+tests/unit/test_environment_contract.py	imports	tests	python AST import
 tests/unit/test_environment_contract.py	imports	tnnx	python AST import
 tests/unit/test_examples_model_zoo_catalog.py	imports	__future__	python AST import
 tests/unit/test_examples_model_zoo_catalog.py	imports	examples.model_zoo	python AST import

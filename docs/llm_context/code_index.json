@@ -202,11 +202,11 @@
       "exported_symbols": [],
       "file_kind": "md",
       "imports": [],
-      "line_count": 164,
+      "line_count": 166,
       "path": "README.md",
       "purpose": "Repository documentation",
-      "sha256": "89d16e6e013e0a98bb74f7567ce592c42ec33dd620ae7852a14c56a1a9bd4200",
-      "size_bytes": 4559,
+      "sha256": "bdcb9e392e109252d3d5a372264c70991ad99e96c2fe26a18939042d86cf7cdd",
+      "size_bytes": 4679,
       "subsystem": "docs"
     },
     {
@@ -602,11 +602,11 @@
       "exported_symbols": [],
       "file_kind": "md",
       "imports": [],
-      "line_count": 39,
+      "line_count": 40,
       "path": "docs/testing.md",
       "purpose": "Repository documentation",
-      "sha256": "62d3dbf74eaaab7287918fd250e7d7bfbd8a1323388c8ff2822eac70e7142219",
-      "size_bytes": 1309,
+      "sha256": "c67f8f7bf6b89149b79186eaf9caefd9745596432682e184f6e9eab985a57e50",
+      "size_bytes": 1406,
       "subsystem": "docs"
     },
     {
@@ -3032,20 +3032,23 @@
       ],
       "disposition": "KEEP",
       "exported_symbols": [
+        "WHISPER_CACHE_ROOT",
         "_add_markers",
+        "_missing_whisper_snapshot_reason",
         "pytest_collection_modifyitems"
       ],
       "file_kind": "py",
       "imports": [
         "__future__",
         "collections.abc",
+        "pathlib",
         "pytest"
       ],
-      "line_count": 29,
+      "line_count": 47,
       "path": "tests/conftest.py",
       "purpose": "Regression or validation test",
-      "sha256": "37f8036d7a75bc5eb9b65b2fe16616970f150b862043df03eb0cdeb9d01837a5",
-      "size_bytes": 908,
+      "sha256": "562bb592c665090050f999c40dc5a0851aca0a8b363270c0c30de0b1822434d8",
+      "size_bytes": 1660,
       "subsystem": "tests"
     },
     {
@@ -5316,20 +5319,22 @@
       "exported_symbols": [
         "test_package_imports",
         "test_package_is_installable",
-        "test_python_version_is_314"
+        "test_python_version_is_314",
+        "test_whisper_audio_snapshot_gate_reports_missing_cache"
       ],
       "file_kind": "py",
       "imports": [
         "__future__",
         "importlib.metadata",
         "sys",
+        "tests",
         "tnnx"
       ],
-      "line_count": 18,
+      "line_count": 29,
       "path": "tests/unit/test_environment_contract.py",
       "purpose": "Regression or validation test",
-      "sha256": "abc982ca5f63b0d65ba68be0e353133d253a1fe4134611ee80841982b4258080",
-      "size_bytes": 359,
+      "sha256": "7a52bf49eea782d3c69a4607a94e965157cfa1ac8df5be1726a073967c2a370c",
+      "size_bytes": 730,
       "subsystem": "tests"
     },
     {

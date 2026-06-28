@@ -552,8 +552,10 @@
 {"file": "tests/_support/flux.py", "kind": "function", "line": "24", "signature": "load_flux_example_modules", "subsystem": "tests", "symbol": "load_flux_example_modules"}
 {"file": "tests/_support/flux.py", "kind": "function", "line": "34", "signature": "real_flux_export_spec_or_skip", "subsystem": "tests", "symbol": "real_flux_export_spec_or_skip"}
 {"file": "tests/_support/flux.py", "kind": "function", "line": "68", "signature": "real_flux_export_spec_with_loader_or_skip", "subsystem": "tests", "symbol": "real_flux_export_spec_with_loader_or_skip"}
-{"file": "tests/conftest.py", "kind": "function", "line": "8", "signature": "_add_markers", "subsystem": "tests", "symbol": "_add_markers"}
-{"file": "tests/conftest.py", "kind": "function", "line": "13", "signature": "pytest_collection_modifyitems", "subsystem": "tests", "symbol": "pytest_collection_modifyitems"}
+{"file": "tests/conftest.py", "kind": "constant", "line": "8", "signature": "WHISPER_CACHE_ROOT", "subsystem": "tests", "symbol": "WHISPER_CACHE_ROOT"}
+{"file": "tests/conftest.py", "kind": "function", "line": "11", "signature": "_missing_whisper_snapshot_reason", "subsystem": "tests", "symbol": "_missing_whisper_snapshot_reason"}
+{"file": "tests/conftest.py", "kind": "function", "line": "22", "signature": "_add_markers", "subsystem": "tests", "symbol": "_add_markers"}
+{"file": "tests/conftest.py", "kind": "function", "line": "27", "signature": "pytest_collection_modifyitems", "subsystem": "tests", "symbol": "pytest_collection_modifyitems"}
 {"file": "tests/integration/test_cli_transpile_custom_artifacts.py", "kind": "function", "line": "12", "signature": "_write_simple_onnx", "subsystem": "tests", "symbol": "_write_simple_onnx"}
 {"file": "tests/integration/test_cli_transpile_custom_artifacts.py", "kind": "test", "line": "21", "signature": "test_cli_transpile_custom_weights_and_entry", "subsystem": "tests", "symbol": "test_cli_transpile_custom_weights_and_entry"}
 {"file": "tests/integration/test_cli_transpile_jax.py", "kind": "function", "line": "11", "signature": "_write_simple_onnx", "subsystem": "tests", "symbol": "_write_simple_onnx"}
@@ -826,9 +828,10 @@
 {"file": "tests/unit/test_backend_semantic_coverage.py", "kind": "function", "line": "13", "signature": "_dispatched_ops", "subsystem": "tests", "symbol": "_dispatched_ops"}
 {"file": "tests/unit/test_backend_semantic_coverage.py", "kind": "test", "line": "21", "signature": "test_jax_codegen_dispatch_covers_all_semantic_ops", "subsystem": "tests", "symbol": "test_jax_codegen_dispatch_covers_all_semantic_ops"}
 {"file": "tests/unit/test_backend_semantic_coverage.py", "kind": "test", "line": "25", "signature": "test_mlx_codegen_dispatch_covers_all_semantic_ops", "subsystem": "tests", "symbol": "test_mlx_codegen_dispatch_covers_all_semantic_ops"}
-{"file": "tests/unit/test_environment_contract.py", "kind": "test", "line": "7", "signature": "test_python_version_is_314", "subsystem": "tests", "symbol": "test_python_version_is_314"}
-{"file": "tests/unit/test_environment_contract.py", "kind": "test", "line": "11", "signature": "test_package_is_installable", "subsystem": "tests", "symbol": "test_package_is_installable"}
-{"file": "tests/unit/test_environment_contract.py", "kind": "test", "line": "15", "signature": "test_package_imports", "subsystem": "tests", "symbol": "test_package_imports"}
+{"file": "tests/unit/test_environment_contract.py", "kind": "test", "line": "9", "signature": "test_python_version_is_314", "subsystem": "tests", "symbol": "test_python_version_is_314"}
+{"file": "tests/unit/test_environment_contract.py", "kind": "test", "line": "13", "signature": "test_package_is_installable", "subsystem": "tests", "symbol": "test_package_is_installable"}
+{"file": "tests/unit/test_environment_contract.py", "kind": "test", "line": "17", "signature": "test_package_imports", "subsystem": "tests", "symbol": "test_package_imports"}
+{"file": "tests/unit/test_environment_contract.py", "kind": "test", "line": "23", "signature": "test_whisper_audio_snapshot_gate_reports_missing_cache", "subsystem": "tests", "symbol": "test_whisper_audio_snapshot_gate_reports_missing_cache"}
 {"file": "tests/unit/test_examples_model_zoo_catalog.py", "kind": "constant", "line": "8", "signature": "EXPECTED_ORDER", "subsystem": "tests", "symbol": "EXPECTED_ORDER"}
 {"file": "tests/unit/test_examples_model_zoo_catalog.py", "kind": "function", "line": "26", "signature": "_catalog_module", "subsystem": "tests", "symbol": "_catalog_module"}
 {"file": "tests/unit/test_examples_model_zoo_catalog.py", "kind": "function", "line": "35", "signature": "_loaders_module", "subsystem": "tests", "symbol": "_loaders_module"}

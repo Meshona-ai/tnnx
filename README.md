@@ -1,6 +1,8 @@
 # tnnx
 
-Minimal ONNX-based transpiler that emits JAX and MLX artifacts.
+Transpile PyTorch modules into runnable JAX or MLX artifacts by exporting the
+module to ONNX, then letting `tnnx` convert the graph and weights into backend
+Python plus `weights.npz`.
 
 ## Demo Docs
 
