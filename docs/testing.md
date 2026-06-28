@@ -32,8 +32,9 @@ Markers describe tests; they do not skip tests by themselves.
 
 ## Environment Gates
 
-- Whisper real audio runs by default. The loader retries the observed Homebrew x265 dylib mismatch
-  before failing with ffmpeg stderr.
+- Whisper real audio runs by default when the local `openai/whisper-tiny` snapshot exists; otherwise
+  the snapshot-backed tests skip. The loader retries the observed Homebrew x265 dylib mismatch before
+  failing with ffmpeg stderr.
 - `RUN_FLUX_E2E=1` plus `TNNX_FLUX_SNAPSHOT=/abs/path` enables checkpoint-backed FLUX lanes.
 - `RUN_QWEN_JAX_E2E=1` and `RUN_QWEN_MLX_E2E=1` enable full Qwen lanes.
 - `--local-files-only` keeps Qwen real paths offline and fails if required assets are not cached.
